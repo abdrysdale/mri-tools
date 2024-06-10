@@ -11,10 +11,11 @@ Repositories are stored in the toml file in the format:
 languages = ["repo-lang-1", "repo-lang-2"]
 link = "repo-link"
 license = "repo-license"
-description = A short description about the repo
+description = "A short description about the repo"
 tags = ["repo-tag-1", "repo-tag-2"]
 ```
 
+- [stats](#stats)
 - [tags](#tags)
 	- [reconstruction](#reconstruction)
 	- [analysis](#analysis)

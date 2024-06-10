@@ -134,7 +134,7 @@ def make(repos: list[dict], out: str = "README.md") -> bool:
         return f"[{key}](#{key})"
 
     stats = {"tags": tags, "languages": languages}
-    toc = "- {_toc_item("stats")}\n"
+    toc = f"- {_toc_item("stats")}\n"
     for section in ("tags", "languages"):
 
         toc = toc + f"- {_toc_item(section)}\n"
