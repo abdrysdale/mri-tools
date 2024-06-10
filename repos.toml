@@ -150,7 +150,7 @@ languages = ["python"]
 link = "https://github.com/mrphys/tensorflow-mri"
 license = "Apache"
 description = "library of TensorFlow operators for computational MRI"
-tags = ["reconstruction", "ML"]
+tags = ["reconstruction", "ml"]
 
 [quit]
 languages = ["c++", "python"]
@@ -255,7 +255,7 @@ languages = ["python"]
 link = "https://github.com/facebookresearch/fastMRI"
 license = "MIT"
 description = "research project from Facebook AI Research (FAIR) and NYU Langone Health to investigate the use of AI to make MRI scans faster"
-tags = ["ML", "analysis", "data"]
+tags = ["ml", "analysis", "data"]
 
 [flow4d]
 languages = ["python"]
@@ -402,7 +402,7 @@ languages = ["python"]
 link = "https://github.com/BBillot/SynthSeg"
 license = "Apache"
 description = "deep learning tool for segmentation of brain scans of any contrast and resolution"
-tags = ["ML", "reconstruction"]
+tags = ["ml", "reconstruction"]
 
 [intensity-normalization]
 languages = ["python"]
