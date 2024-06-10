@@ -84,7 +84,10 @@ def make(repos: list[dict], out: str = "README.md") -> bool:
     """
 
     intro = (
-        "# MRI Tools\n\n"
+        "# MRI Tools\n"
+        "![made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg) "
+        "![license](https://img.shields.io/github/license/abdrysdale/mri-tools.svg) "
+        "![size](https://badge-size.herokuapp.com/abdrysdale/mri-tools/main/README.md)\n\n"
         "A collection of free and open-source software software tools for use in MRI.\n"
         "Free is meant as in free beer (gratis) and freedom (libre).\n\n"
         "To add a project edit the repos.toml file and submit a pull request.\n"
@@ -134,7 +137,7 @@ def make(repos: list[dict], out: str = "README.md") -> bool:
         return f"[{key}](#{key})"
 
     stats = {"tags": tags, "languages": languages}
-    toc = f"- {_toc_item("stats")}\n"
+    toc = f"## Table of Contents\n- {_toc_item("stats")}\n"
     for section in ("tags", "languages"):
 
         toc = toc + f"- {_toc_item(section)}\n"

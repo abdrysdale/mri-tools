@@ -1,4 +1,5 @@
 # MRI Tools
+![made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg) ![license](https://img.shields.io/github/license/abdrysdale/mri-tools.svg) ![size](https://badge-size.herokuapp.com/abdrysdale/mri-tools/main/README.md)
 
 A collection of free and open-source software software tools for use in MRI.
 Free is meant as in free beer (gratis) and freedom (libre).
@@ -15,6 +16,7 @@ description = "A short description about the repo"
 tags = ["repo-tag-1", "repo-tag-2"]
 ```
 
+## Table of Contents
 - [stats](#stats)
 - [tags](#tags)
 	- [reconstruction](#reconstruction)
