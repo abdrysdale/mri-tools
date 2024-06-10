@@ -144,7 +144,7 @@ def make(repos: list[dict], out: str = "README.md") -> bool:
         for f in stats[section].keys():
 
             toc = toc + f"\t- {_toc_item(f)}\n"
-            mdrend = mdrend + f"### {f.title()}\n"
+            mdrend = mdrend + f"### {f.title()} <a name=\"{f}\"></a>\n"
 
             for k in repos:
 

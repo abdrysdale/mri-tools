@@ -92,7 +92,7 @@ tags = ["repo-tag-1", "repo-tag-2"]
 
 
 ## Tags
-### Reconstruction
+### Reconstruction <a name="reconstruction"></a>
 - [scanhub](https://github.com/brain-link/scanhub)
 >- Languages: python
 >- License: GPLv3
@@ -132,7 +132,7 @@ tags = ["repo-tag-1", "repo-tag-2"]
 - [tensorflow-mri](https://github.com/mrphys/tensorflow-mri)
 >- Languages: python
 >- License: Apache
->- Tags: reconstruction, ML
+>- Tags: reconstruction, ml
 >- Library Of Tensorflow Operators For Computational Mri
 
 - [mri-reco](https://github.com/MagneticResonanceImaging/MRIReco.jl)
@@ -192,10 +192,10 @@ tags = ["repo-tag-1", "repo-tag-2"]
 - [synthseg](https://github.com/BBillot/SynthSeg)
 >- Languages: python
 >- License: Apache
->- Tags: ML, reconstruction
+>- Tags: ml, reconstruction
 >- Deep Learning Tool For Segmentation Of Brain Scans Of Any Contrast And Resolution
 
-### Analysis
+### Analysis <a name="analysis"></a>
 - [slicer](https://github.com/Slicer/Slicer)
 >- Languages: python, c++
 >- License: BSD
@@ -247,7 +247,7 @@ tags = ["repo-tag-1", "repo-tag-2"]
 - [fastmri](https://github.com/facebookresearch/fastMRI)
 >- Languages: python
 >- License: MIT
->- Tags: ML, analysis, data
+>- Tags: ml, analysis, data
 >- Research Project From Facebook Ai Research (Fair) And Nyu Langone Health To Investigate The Use Of Ai To Make Mri Scans Faster
 
 - [affirm](https://github.com/allard-shi/affirm)
@@ -286,7 +286,7 @@ tags = ["repo-tag-1", "repo-tag-2"]
 >- Tags: qa, analysis
 >- Extracts No-Reference Iqms (Image Quality Metrics) From Structural (T1W And T2W) And Functional Mri (Magnetic Resonance Imaging) Data
 
-### Processing
+### Processing <a name="processing"></a>
 - [vespa](https://github.com/vespa-mrs/vespa/)
 >- Languages: python
 >- License: BSD
@@ -365,7 +365,7 @@ tags = ["repo-tag-1", "repo-tag-2"]
 >- Tags: processing
 >- Various Methods To Normalize The Intensity Of Various Modalities Of Magnetic Resonance (Mr) Images, E.G., T1-Weighted (T1-W), T2-Weighted (T2-W), Fluid-Attenuated Inversion Recovery (Flair), And Proton Density-Weighted (Pd-W)
 
-### Simulation
+### Simulation <a name="simulation"></a>
 - [pycoilgen](https://github.com/kev-m/pyCoilGen)
 >- Languages: python
 >- License: GPLv3
@@ -438,7 +438,7 @@ tags = ["repo-tag-1", "repo-tag-2"]
 >- Tags: processing, analysis, simulation
 >- Specialized Tools For Mri
 
-### Segmentation
+### Segmentation <a name="segmentation"></a>
 - [dl-direct](https://github.com/SCAN-NRAD/DL-DiReCT)
 >- Languages: python
 >- License: BSD
@@ -481,7 +481,7 @@ tags = ["repo-tag-1", "repo-tag-2"]
 >- Tags: segmentation, visualisation
 >- In-Browser 3D Mri Rendering And Segmentation
 
-### Visualisation
+### Visualisation <a name="visualisation"></a>
 - [slicer](https://github.com/Slicer/Slicer)
 >- Languages: python, c++
 >- License: BSD
@@ -518,7 +518,7 @@ tags = ["repo-tag-1", "repo-tag-2"]
 >- Tags: visualisation
 >- High Performance Web Tool For Advanced Visualization (Both In 2D And 3D Modes) Medical Volumetric Data, Provided In Popular File Formats: Dicom, Nifti, Ktx, Hdr
 
-### Fetal
+### Fetal <a name="fetal"></a>
 - [nesvor](https://github.com/daviddmc/NeSVoR)
 >- Languages: python
 >- License: MIT
@@ -555,7 +555,7 @@ tags = ["repo-tag-1", "repo-tag-2"]
 >- Tags: qa, fetal
 >-  Image Quality Assessment (Iqa) Method For Fetal Mri
 
-### Data
+### Data <a name="data"></a>
 - [vespa](https://github.com/vespa-mrs/vespa/)
 >- Languages: python
 >- License: BSD
@@ -571,7 +571,7 @@ tags = ["repo-tag-1", "repo-tag-2"]
 - [fastmri](https://github.com/facebookresearch/fastMRI)
 >- Languages: python
 >- License: MIT
->- Tags: ML, analysis, data
+>- Tags: ml, analysis, data
 >- Research Project From Facebook Ai Research (Fair) And Nyu Langone Health To Investigate The Use Of Ai To Make Mri Scans Faster
 
 - [nlft](https://github.com/JuliaNeuroscience/NIfTI.jl)
@@ -586,7 +586,7 @@ tags = ["repo-tag-1", "repo-tag-2"]
 >- Tags: data
 >- Curated List Of Open-Access Databases With Human Structural Mri Data
 
-### Brain
+### Brain <a name="brain"></a>
 - [ukf-tractography](https://github.com/pnlbwh/ukftractography)
 >- Languages: c, c++
 >- License: BSD
@@ -611,8 +611,26 @@ tags = ["repo-tag-1", "repo-tag-2"]
 >- Tags: segmentation, brain
 >- Fully Convolutional Network For Quick And Accurate Segmentation Of Neuroanatomy And Quality Control Of Structure-Wise Segmentations
 
-### Ml
-### Qa
+### Ml <a name="ml"></a>
+- [tensorflow-mri](https://github.com/mrphys/tensorflow-mri)
+>- Languages: python
+>- License: Apache
+>- Tags: reconstruction, ml
+>- Library Of Tensorflow Operators For Computational Mri
+
+- [fastmri](https://github.com/facebookresearch/fastMRI)
+>- Languages: python
+>- License: MIT
+>- Tags: ml, analysis, data
+>- Research Project From Facebook Ai Research (Fair) And Nyu Langone Health To Investigate The Use Of Ai To Make Mri Scans Faster
+
+- [synthseg](https://github.com/BBillot/SynthSeg)
+>- Languages: python
+>- License: Apache
+>- Tags: ml, reconstruction
+>- Deep Learning Tool For Segmentation Of Brain Scans Of Any Contrast And Resolution
+
+### Qa <a name="qa"></a>
 - [mrqy](https://github.com/ccipd/MRQy)
 >- Languages: javascript, python
 >- License: BSD
@@ -631,21 +649,21 @@ tags = ["repo-tag-1", "repo-tag-2"]
 >- Tags: qa, analysis
 >- Extracts No-Reference Iqms (Image Quality Metrics) From Structural (T1W And T2W) And Functional Mri (Magnetic Resonance Imaging) Data
 
-### Renal
+### Renal <a name="renal"></a>
 - [ukat](https://github.com/UKRIN-MAPS/ukat)
 >- Languages: python
 >- License: GPLv3
 >- Tags: analysis, renal
 >- Ukat Is A Vendor Agnostic Framework For The Analysis Of Quantitative Renal Mri Data
 
-### Spinal
+### Spinal <a name="spinal"></a>
 - [spinal-chord-toolbox](https://github.com/spinalcordtoolbox/spinalcordtoolbox)
 >- Languages: python
 >- License: LGPLv3
 >- Tags: segmentation, processing, spinal
 >- Comprehensive, Free And Open-Source Set Of Command-Line Tools Dedicated To The Processing And Analysis Of Spinal Cord Mri Data
 
-### Muscle
+### Muscle <a name="muscle"></a>
 - [myoqmri](https://github.com/fsantini/MyoQMRI)
 >- Languages: python
 >- License: GPLv3
@@ -655,7 +673,7 @@ tags = ["repo-tag-1", "repo-tag-2"]
 
 
 ## Languages
-### Python
+### Python <a name="python"></a>
 - [pycoilgen](https://github.com/kev-m/pyCoilGen)
 >- Languages: python
 >- License: GPLv3
@@ -761,7 +779,7 @@ tags = ["repo-tag-1", "repo-tag-2"]
 - [tensorflow-mri](https://github.com/mrphys/tensorflow-mri)
 >- Languages: python
 >- License: Apache
->- Tags: reconstruction, ML
+>- Tags: reconstruction, ml
 >- Library Of Tensorflow Operators For Computational Mri
 
 - [quit](https://github.com/spinicist/QUIT)
@@ -815,7 +833,7 @@ tags = ["repo-tag-1", "repo-tag-2"]
 - [fastmri](https://github.com/facebookresearch/fastMRI)
 >- Languages: python
 >- License: MIT
->- Tags: ML, analysis, data
+>- Tags: ml, analysis, data
 >- Research Project From Facebook Ai Research (Fair) And Nyu Langone Health To Investigate The Use Of Ai To Make Mri Scans Faster
 
 - [flow4d](https://github.com/saitta-s/flow4D)
@@ -905,7 +923,7 @@ tags = ["repo-tag-1", "repo-tag-2"]
 - [synthseg](https://github.com/BBillot/SynthSeg)
 >- Languages: python
 >- License: Apache
->- Tags: ML, reconstruction
+>- Tags: ml, reconstruction
 >- Deep Learning Tool For Segmentation Of Brain Scans Of Any Contrast And Resolution
 
 - [intensity-normalization](https://github.com/jcreinhold/intensity-normalization)
@@ -914,7 +932,7 @@ tags = ["repo-tag-1", "repo-tag-2"]
 >- Tags: processing
 >- Various Methods To Normalize The Intensity Of Various Modalities Of Magnetic Resonance (Mr) Images, E.G., T1-Weighted (T1-W), T2-Weighted (T2-W), Fluid-Attenuated Inversion Recovery (Flair), And Proton Density-Weighted (Pd-W)
 
-### C++
+### C++ <a name="c++"></a>
 - [slicer](https://github.com/Slicer/Slicer)
 >- Languages: python, c++
 >- License: BSD
@@ -1011,7 +1029,7 @@ tags = ["repo-tag-1", "repo-tag-2"]
 >- Tags: reconstruction, fetal
 >- C++ And Python Tools Necessary To Perform Motion-Robust Super-Resolution Fetal Mri Reconstruction
 
-### Julia
+### Julia <a name="julia"></a>
 - [koma](https://github.com/JuliaHealth/KomaMRI.jl)
 >- Languages: julia
 >- License: MIT
@@ -1054,7 +1072,7 @@ tags = ["repo-tag-1", "repo-tag-2"]
 >- Tags: analysis
 >- Open Source Toolkit For Dynamic Contrast Enhanced Mri Analysis
 
-### C
+### C <a name="c"></a>
 - [ukf-tractography](https://github.com/pnlbwh/ukftractography)
 >- Languages: c, c++
 >- License: BSD
@@ -1085,7 +1103,7 @@ tags = ["repo-tag-1", "repo-tag-2"]
 >- Tags: reconstruction
 >- Free And Open-Source Image-Reconstruction Framework For Computational Magnetic Resonance Imaging
 
-### Javascript
+### Javascript <a name="javascript"></a>
 - [mrqy](https://github.com/ccipd/MRQy)
 >- Languages: javascript, python
 >- License: BSD
@@ -1110,14 +1128,14 @@ tags = ["repo-tag-1", "repo-tag-2"]
 >- Tags: visualisation
 >- High Performance Web Tool For Advanced Visualization (Both In 2D And 3D Modes) Medical Volumetric Data, Provided In Popular File Formats: Dicom, Nifti, Ktx, Hdr
 
-### R
+### R <a name="r"></a>
 - [braingraph](https://github.com/cwatson/brainGraph)
 >- Languages: r
 >- License: None
 >- Tags: analysis
 >- R Package For Performing Graph Theory Analyses Of Brain Mri Data
 
-### Jupyter
+### Jupyter <a name="jupyter"></a>
 - [openmorph](https://github.com/cMadan/openMorph)
 >- Languages: jupyter
 >- License: None
