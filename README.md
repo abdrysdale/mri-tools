@@ -4,6 +4,42 @@ A collection of free and open-source software software tools for use in MRI.
 Free is meant as in free beer (gratis) and freedom (libre).
 
 To add a project edit the repos.toml file and submit a pull request.
+Repositories are stored in the toml file in the format:
+
+```toml
+[repo-name]
+languages = ["repo-lang-1", "repo-lang-2"]
+link = "repo-link"
+license = "repo-license"
+description = A short description about the repo
+tags = ["repo-tag-1", "repo-tag-2"]
+```
+
+- [tags](#tags)
+	- [reconstruction](#reconstruction)
+	- [analysis](#analysis)
+	- [processing](#processing)
+	- [simulation](#simulation)
+	- [visualisation](#visualisation)
+	- [segmentation](#segmentation)
+	- [fetal](#fetal)
+	- [data](#data)
+	- [brain](#brain)
+	- [ml](#ml)
+	- [qa](#qa)
+	- [renal](#renal)
+	- [spinal](#spinal)
+	- [muscle](#muscle)
+- [languages](#languages)
+	- [python](#python)
+	- [c++](#c++)
+	- [julia](#julia)
+	- [c](#c)
+	- [javascript](#javascript)
+	- [r](#r)
+	- [mathematica](#mathematica)
+	- [jupyter](#jupyter)
+
 ## Stats
 - Total repos: 61
 - Languages:

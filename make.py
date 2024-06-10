@@ -83,11 +83,17 @@ def make(repos: list[dict], out: str = "README.md") -> bool:
         return_val (bool) : True if sucessful, False otherwise.
     """
 
-    mdrend = (
+    intro = (
         "# MRI Tools\n\n"
         "A collection of free and open-source software software tools for use in MRI.\n"
         "Free is meant as in free beer (gratis) and freedom (libre).\n\n"
         "To add a project edit the repos.toml file and submit a pull request.\n"
+        "Repositories are stored in the toml file in the format:\n\n"
+        "```toml\n"
+        "[repo-name]\nlanguages = [\"repo-lang-1\", \"repo-lang-2\"]\nlink = \"repo-link\"\n"
+        "license = \"repo-license\"\ndescription = A short description about the repo\n"
+        "tags = [\"repo-tag-1\", \"repo-tag-2\"]\n"
+        "```\n\n"
     )
 
     languages = count_entries_in_field(repos, "languages")
@@ -106,7 +112,7 @@ def make(repos: list[dict], out: str = "README.md") -> bool:
         return _out
             
 
-    mdrend = mdrend + (
+    mdrend = (
         "## Stats\n"
         f"- Total repos: {len(repos)}\n"
         f"- Languages:\n\n{_rend_table("Language", languages)}\n"
@@ -124,18 +130,29 @@ def make(repos: list[dict], out: str = "README.md") -> bool:
         )
         return _out
 
+    def _toc_item(key):
+        return f"[{key}](#{key})"
+
     stats = {"tags": tags, "languages": languages}
+    toc = ""
     for section in ("tags", "languages"):
-        
+
+        toc = toc + f"- {_toc_item(section)}\n"
         mdrend = mdrend + f"\n\n## {section.title()}\n"
+
         for f in stats[section].keys():
-            
+
+            toc = toc + f"\t- {_toc_item(f)}\n"
             mdrend = mdrend + f"### {f.title()}\n"
+
             for k in repos:
-                
+
                 repo = repos[k]
+
                 if f in repo[section]:
                     mdrend = mdrend + _get_repo_str(repo, k)
+
+    mdrend = intro + toc + "\n" + mdrend
 
     with open(out, "w") as fp:
         fp.write(mdrend)
