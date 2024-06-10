@@ -91,7 +91,7 @@ def make(repos: list[dict], out: str = "README.md") -> bool:
         "Repositories are stored in the toml file in the format:\n\n"
         "```toml\n"
         "[repo-name]\nlanguages = [\"repo-lang-1\", \"repo-lang-2\"]\nlink = \"repo-link\"\n"
-        "license = \"repo-license\"\ndescription = A short description about the repo\n"
+        "license = \"repo-license\"\ndescription = \"A short description about the repo\"\n"
         "tags = [\"repo-tag-1\", \"repo-tag-2\"]\n"
         "```\n\n"
     )
@@ -134,7 +134,7 @@ def make(repos: list[dict], out: str = "README.md") -> bool:
         return f"[{key}](#{key})"
 
     stats = {"tags": tags, "languages": languages}
-    toc = ""
+    toc = "- {_toc_item("stats")}\n"
     for section in ("tags", "languages"):
 
         toc = toc + f"- {_toc_item(section)}\n"
