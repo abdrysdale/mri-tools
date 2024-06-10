@@ -40,13 +40,6 @@ license = "BSD"
 description = "open source software package for visualization and image analysis."
 tags = ["simulation", "analysis", "visualisation"]
 
-[qmritools]
-languages = ["mathematica"]
-link = "https://github.com/mfroeling/QMRITools"
-license = "BSD"
-description = "collection of tools and functions for processing quantitative MRI data."
-tags = ["simulation", "processing", "visualisation"]
-
 [eptlib]
 languages = ["c++", "python"]
 link = "https://github.com/eptlib/eptlib"

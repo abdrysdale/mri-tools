@@ -85,7 +85,7 @@ def make(repos: list[dict], out: str = "README.md") -> bool:
 
     intro = (
         "# MRI Tools\n"
-        "![license](https://img.shields.io/github/license/abdrysdale/mri-tools.svg) "
+        "![license](https://img.shields.io/github/license/abdrysdale/mri-tools.svg)\n\n"
         "A collection of free and open-source software software tools for use in MRI.\n"
         "Free is meant as in free beer (gratis) and freedom (libre).\n\n"
         "To add a project edit the repos.toml file and submit a pull request.\n"

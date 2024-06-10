@@ -1,5 +1,5 @@
 # MRI Tools
-![made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg) ![license](https://img.shields.io/github/license/abdrysdale/mri-tools.svg) ![size](https://badge-size.herokuapp.com/abdrysdale/mri-tools/main/README.md)
+![license](https://img.shields.io/github/license/abdrysdale/mri-tools.svg)
 
 A collection of free and open-source software software tools for use in MRI.
 Free is meant as in free beer (gratis) and freedom (libre).
@@ -23,8 +23,8 @@ tags = ["repo-tag-1", "repo-tag-2"]
 	- [analysis](#analysis)
 	- [processing](#processing)
 	- [simulation](#simulation)
-	- [visualisation](#visualisation)
 	- [segmentation](#segmentation)
+	- [visualisation](#visualisation)
 	- [fetal](#fetal)
 	- [data](#data)
 	- [brain](#brain)
@@ -40,11 +40,10 @@ tags = ["repo-tag-1", "repo-tag-2"]
 	- [c](#c)
 	- [javascript](#javascript)
 	- [r](#r)
-	- [mathematica](#mathematica)
 	- [jupyter](#jupyter)
 
 ## Stats
-- Total repos: 61
+- Total repos: 60
 - Languages:
 
 | Language | Count |
@@ -55,7 +54,6 @@ tags = ["repo-tag-1", "repo-tag-2"]
 | c | 5 |
 | javascript | 4 |
 | r | 2 |
-| mathematica | 1 |
 | jupyter | 1 |
 
 - Tags:
@@ -64,10 +62,10 @@ tags = ["repo-tag-1", "repo-tag-2"]
 |---|---|
 | reconstruction | 17 |
 | analysis | 15 |
-| processing | 14 |
-| simulation | 13 |
-| visualisation | 7 |
+| processing | 13 |
+| simulation | 12 |
 | segmentation | 7 |
+| visualisation | 6 |
 | fetal | 6 |
 | data | 5 |
 | brain | 4 |
@@ -82,8 +80,8 @@ tags = ["repo-tag-1", "repo-tag-2"]
 | Licence | Count |
 |---|---|
 | mit | 22 |
-| bsd | 11 |
 | apache | 11 |
+| bsd | 10 |
 | gplv3 | 8 |
 | agplv3 | 2 |
 | lgplv3 | 2 |
@@ -301,12 +299,6 @@ tags = ["repo-tag-1", "repo-tag-2"]
 >- Tags: simulation, reconstruction, processing
 >- Multi Modal Acquisition Software, Which Allows Individualizable, Modular And Cloud-Based Processing Of Functional And Anatomical Medical Images.
 
-- [qmritools](https://github.com/mfroeling/QMRITools)
->- Languages: mathematica
->- License: BSD
->- Tags: simulation, processing, visualisation
->- Collection Of Tools And Functions For Processing Quantitative Mri Data.
-
 - [spinal-chord-toolbox](https://github.com/spinalcordtoolbox/spinalcordtoolbox)
 >- Languages: python
 >- License: LGPLv3
@@ -410,12 +402,6 @@ tags = ["repo-tag-1", "repo-tag-2"]
 >- Tags: simulation, analysis, visualisation
 >- Open Source Software Package For Visualization And Image Analysis.
 
-- [qmritools](https://github.com/mfroeling/QMRITools)
->- Languages: mathematica
->- License: BSD
->- Tags: simulation, processing, visualisation
->- Collection Of Tools And Functions For Processing Quantitative Mri Data.
-
 - [pypulseq](https://github.com/imr-framework/pypulseq/)
 >- Languages: python
 >- License: AGPLv3
@@ -451,49 +437,6 @@ tags = ["repo-tag-1", "repo-tag-2"]
 >- License: MIT
 >- Tags: processing, analysis, simulation
 >- Specialized Tools For Mri
-
-### Visualisation
-- [slicer](https://github.com/Slicer/Slicer)
->- Languages: python, c++
->- License: BSD
->- Tags: simulation, analysis, visualisation
->- Open Source Software Package For Visualization And Image Analysis.
-
-- [qmritools](https://github.com/mfroeling/QMRITools)
->- Languages: mathematica
->- License: BSD
->- Tags: simulation, processing, visualisation
->- Collection Of Tools And Functions For Processing Quantitative Mri Data.
-
-- [ukf-tractography](https://github.com/pnlbwh/ukftractography)
->- Languages: c, c++
->- License: BSD
->- Tags: visualisation, brain
->- Framework Which Uses An Unscented Kalman Filter For Performing Tractography
-
-- [freesurfer](https://github.com/freesurfer/freesurfer)
->- Languages: c++, c, python
->- License: GPLv3
->- Tags: analysis, visualisation, brain
->- Analysis And Visualization Of Neuroimaging Data From Cross-Sectional And Longitudinal Studies
-
-- [gif_your_nifti](https://github.com/miykael/gif_your_nifti)
->- Languages: python
->- License: BSD
->- Tags: visualisation
->- Create Nice Looking Gifs From Your Nifti (.Nii Or .Nii.Gz) Files With A Simple Command
-
-- [brainchop](https://github.com/neuroneural/brainchop)
->- Languages: javascript, python
->- License: MIT
->- Tags: segmentation, visualisation
->- In-Browser 3D Mri Rendering And Segmentation
-
-- [mri-viewer](https://github.com/epam/mriviewer)
->- Languages: javascript
->- License: Apache
->- Tags: visualisation
->- High Performance Web Tool For Advanced Visualization (Both In 2D And 3D Modes) Medical Volumetric Data, Provided In Popular File Formats: Dicom, Nifti, Ktx, Hdr
 
 ### Segmentation
 - [dl-direct](https://github.com/SCAN-NRAD/DL-DiReCT)
@@ -537,6 +480,43 @@ tags = ["repo-tag-1", "repo-tag-2"]
 >- License: MIT
 >- Tags: segmentation, visualisation
 >- In-Browser 3D Mri Rendering And Segmentation
+
+### Visualisation
+- [slicer](https://github.com/Slicer/Slicer)
+>- Languages: python, c++
+>- License: BSD
+>- Tags: simulation, analysis, visualisation
+>- Open Source Software Package For Visualization And Image Analysis.
+
+- [ukf-tractography](https://github.com/pnlbwh/ukftractography)
+>- Languages: c, c++
+>- License: BSD
+>- Tags: visualisation, brain
+>- Framework Which Uses An Unscented Kalman Filter For Performing Tractography
+
+- [freesurfer](https://github.com/freesurfer/freesurfer)
+>- Languages: c++, c, python
+>- License: GPLv3
+>- Tags: analysis, visualisation, brain
+>- Analysis And Visualization Of Neuroimaging Data From Cross-Sectional And Longitudinal Studies
+
+- [gif_your_nifti](https://github.com/miykael/gif_your_nifti)
+>- Languages: python
+>- License: BSD
+>- Tags: visualisation
+>- Create Nice Looking Gifs From Your Nifti (.Nii Or .Nii.Gz) Files With A Simple Command
+
+- [brainchop](https://github.com/neuroneural/brainchop)
+>- Languages: javascript, python
+>- License: MIT
+>- Tags: segmentation, visualisation
+>- In-Browser 3D Mri Rendering And Segmentation
+
+- [mri-viewer](https://github.com/epam/mriviewer)
+>- Languages: javascript
+>- License: Apache
+>- Tags: visualisation
+>- High Performance Web Tool For Advanced Visualization (Both In 2D And 3D Modes) Medical Volumetric Data, Provided In Popular File Formats: Dicom, Nifti, Ktx, Hdr
 
 ### Fetal
 - [nesvor](https://github.com/daviddmc/NeSVoR)
@@ -1136,13 +1116,6 @@ tags = ["repo-tag-1", "repo-tag-2"]
 >- License: None
 >- Tags: analysis
 >- R Package For Performing Graph Theory Analyses Of Brain Mri Data
-
-### Mathematica
-- [qmritools](https://github.com/mfroeling/QMRITools)
->- Languages: mathematica
->- License: BSD
->- Tags: simulation, processing, visualisation
->- Collection Of Tools And Functions For Processing Quantitative Mri Data.
 
 ### Jupyter
 - [openmorph](https://github.com/cMadan/openMorph)
