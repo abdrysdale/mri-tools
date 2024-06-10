@@ -66,9 +66,9 @@ def count_entries_in_field(repos: list[dict], field: str) -> dict:
         vals = repos[k][field]
         if isinstance(vals, (list, tuple)):
             for v in vals:
-                cnt[v] += 1
+                cnt[v.lower()] += 1
         else:
-            cnt[vals] += 1
+            cnt[vals.lower()] += 1
     return dict(cnt.most_common())
 
 def make(repos: list[dict], out: str = "README.md") -> bool:
@@ -120,7 +120,7 @@ def make(repos: list[dict], out: str = "README.md") -> bool:
             f">- languages: {repo["languages"]}\n" # Languages
             f">- license: {repo["license"]}\n"     # License
             f">- Tags: {repo["tags"]}\n"           # Tags
-            f"{repo["description"].title()}\n\n"  # Description
+            f">- {repo["description"].title()}\n\n"  # Description
         )
         return _out
 
