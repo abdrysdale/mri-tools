@@ -124,23 +124,18 @@ def make(repos: list[dict], out: str = "README.md") -> bool:
         )
         return _out
 
-    mdrend = mdrend + "\n\n## Languages\n"
-    for l in languages.keys():
-
-        mdrend = mdrend + f"### {l.title()}\n"
-        for k in repos:
-            repo = repos[k]
-            if l in repo["languages"]:
-                mdrend = mdrend + _get_repo_str(repo, k)
-
-    mdrend = mdrend + "\n\n## Tags\n"
-    for t in tags.keys():
-
-        mdrend = mdrend + f"### {t.title()}\n"
-        for k in repos:
-            repo = repos[k]
-            if t in repo["tags"]:
-                mdrend = mdrend + _get_repo_str(repo, k)
+    stats = {"tags": tags, "languages": languages}
+    for section in ("tags", "languages"):
+        
+        mdrend = mdrend + f"\n\n## {section.title()}\n"
+        for f in stats[section].keys():
+            
+            mdrend = mdrend + f"### {f.title()}\n"
+            for k in repos:
+                
+                repo = repos[k]
+                if f in repo[section]:
+                    mdrend = mdrend + _get_repo_str(repo, k)
 
     with open(out, "w") as fp:
         fp.write(mdrend)
