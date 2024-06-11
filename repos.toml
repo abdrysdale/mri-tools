@@ -424,3 +424,115 @@ link = "https://github.com/epam/mriviewer"
 license = "Apache"
 description = "high performance web tool for advanced visualization (both in 2D and 3D modes) medical volumetric data, provided in popular file formats: DICOM, NIfTI, KTX, HDR"
 tags = ["visualisation"]
+
+[monai]
+languages = ["python"]
+link = "https://github.com/Project-MONAI/MONAI"
+license = "Apache"
+description = "AI Toolkit for Healthcare Imaging"
+tags = ["ml", "processing", "segmentation"]
+
+[medical-detection-toolkit]
+languages = ["python"]
+link = "https://github.com/MIC-DKFZ/medicaldetectiontoolkit"
+license = "Apache"
+description = "contains 2D + 3D implementations of prevalent object detectors such as Mask R-CNN, Retina Net, Retina U-Net, as well as a training and inference framework focused on dealing with medical images"
+tags = ["ml", "segmentation"]
+
+[torchio]
+languages = ["python"]
+link = "https://github.com/fepegar/torchio"
+license = "Apache"
+description = "Medical imaging toolkit for deep learning"
+tags = ["ml", "processing"]
+
+[deepmedic]
+languages = ["python"]
+link = "https://github.com/deepmedic/deepmedic"
+license = "BSD"
+description = "Efficient Multi-Scale 3D Convolutional Neural Network for Segmentation of 3D Medical Scans"
+tags = ["ml", "segmentation"]
+
+[medical-torch]
+languages = ["python"]
+link = "https://github.com/perone/medicaltorch?tab=readme-ov-file"
+license = "Apache"
+description = "open-source framework for PyTorch, implementing an extensive set of loaders, pre-processors and datasets for medical imaging"
+tags = ["ml", "processing"]
+
+[medical-zoo]
+languages = ["python"]
+link = "https://github.com/black0017/MedicalZooPytorch"
+license = "MIT"
+description = "pytorch-based deep learning framework for multi-modal 2D/3D medical image segmentation"
+tags = ["ml", "segmentation"]
+
+[nipype]
+languages = ["python"]
+link = "https://github.com/nipy/nipype"
+license = "Apache"
+description = "Python project that provides a uniform interface to existing neuroimaging software and facilitates interaction between these packages within a single workflow"
+tags = ["analysis", "brain"]
+
+[nibabel]
+languages = ["python"]
+link = "https://github.com/nipy/nibabel"
+license = "MIT"
+description = "Read and write access to common neuroimaging file formats, including: ANALYZE (plain, SPM99, SPM2 and later), GIFTI, NIfTI1, NIfTI2, CIFTI-2, MINC1, MINC2, AFNI BRIK/HEAD, ECAT and Philips PAR/REC. In addition, NiBabel also supports FreeSurfer's MGH, geometry, annotation and morphometry files, and provides some limited support for DICOM"
+tags = ["data"]
+
+[nipy]
+languages = ["python", "c"]
+link = "https://github.com/nipy/nipy"
+license = "BSD"
+description = "platform-independent Python environment for the analysis of functional brain imaging data using an open development model"
+tags = ["analysis", "brain"]
+
+[nitime]
+languages = ["python"]
+link = "https://github.com/nipy/nitime"
+license = "BSD"
+description = "contains a core of numerical algorithms for time-series analysis both in the time and spectral domains, a set of container objects to represent time-series, and auxiliary objects that expose a high level interface to the numerical machinery and make common analysis tasks easy to express with compact and semantically clear code"
+tags = ["analysis", "brain"]
+
+[popeye]
+languages = ["python"]
+link = "https://github.com/kdesimone/popeye"
+license = "MIT"
+description = "Python module for estimating population receptive fields from fMRI data built on top of SciPy"
+tags = ["analysis", "brain"]
+
+[nilean]
+languages = ["python"]
+link = "https://github.com/nilearn/nilearn"
+license = "BSD"
+description = "Machine learning for NeuroImaging in Python"
+tags = ["ml", "analysis", "brain"]
+
+[pymvpa]
+languages = ["python"]
+link = "https://github.com/PyMVPA/PyMVPA"
+license = "MIT"
+description = "MultiVariate Pattern Analysis in Python"
+tags = ["ml", "analysis", "brain"]
+
+[tractseg]
+languages = ["python"]
+link = "https://github.com/MIC-DKFZ/TractSeg"
+license = "Apache"
+description = "Automatic White Matter Bundle Segmentation"
+tags = ["ml", "segmentation", "brain"]
+
+[clinicaldl]
+languages = ["python"]
+link = "https://github.com/aramis-lab/clinicadl"
+license = "MIT"
+description = "Framework for the reproducible processing of neuroimaging data with deep learning methods"
+tags = ["ml", "processing"]
+
+[brats-toolkit]
+languages = ["python"]
+link = "https://github.com/neuronflow/BraTS-Toolkit"
+license = "AGPLv3"
+description = "Code to preprocess, segment, and fuse glioma MRI scans based on the BraTS Toolkit manuscript"
+tags = ["ml", "segmentation", "processing"]

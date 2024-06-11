@@ -5,15 +5,15 @@ Free is meant as in free beer (gratis) and freedom (libre).
 
 To add a project edit the repos.toml file and submit a pull request.
 ## Stats
-- Total repos: 61
+- Total repos: 77
 - Languages:
 
 | Language | Count |
 |---|---|
-| python | 43 |
+| python | 59 |
 | c++ | 16 |
 | julia | 7 |
-| c | 5 |
+| c | 6 |
 | javascript | 4 |
 | r | 2 |
 | mathematica | 1 |
@@ -23,16 +23,16 @@ To add a project edit the repos.toml file and submit a pull request.
 
 | Tag | Count |
 |---|---|
+| analysis | 21 |
+| processing | 19 |
 | reconstruction | 17 |
-| analysis | 15 |
-| processing | 14 |
+| ml | 14 |
 | simulation | 13 |
+| segmentation | 13 |
+| brain | 11 |
 | visualisation | 7 |
-| segmentation | 7 |
+| data | 6 |
 | fetal | 6 |
-| data | 5 |
-| brain | 4 |
-| ml | 3 |
 | qa | 3 |
 | renal | 1 |
 | spinal | 1 |
@@ -42,11 +42,11 @@ To add a project edit the repos.toml file and submit a pull request.
 
 | Licence | Count |
 |---|---|
-| mit | 22 |
-| bsd | 11 |
-| apache | 11 |
+| mit | 27 |
+| apache | 17 |
+| bsd | 15 |
 | gplv3 | 8 |
-| agplv3 | 2 |
+| agplv3 | 3 |
 | lgplv3 | 2 |
 | mpl | 2 |
 | none | 2 |
@@ -55,1060 +55,1378 @@ To add a project edit the repos.toml file and submit a pull request.
 
 
 ## Tags
-### Reconstruction
-- [scanhub](https://github.com/brain-link/scanhub)
->- Languages: python
->- License: GPLv3
->- Tags: simulation, reconstruction, processing
->- Multi Modal Acquisition Software, Which Allows Individualizable, Modular And Cloud-Based Processing Of Functional And Anatomical Medical Images.
-
-- [eptlib](https://github.com/eptlib/eptlib)
->- Languages: c++, python
->- License: MIT
->- Tags: reconstruction
->- Collection Of C++ Implementations Of Electric Properties Tomography (Ept) Methods.
-
-- [sirf](https://github.com/SyneRBI/SIRF?tab=readme-ov-file)
->- Languages: c++, python
->- License: GPLv2
->- Tags: reconstruction
->- Open Source Toolkit For The Reconstruction Of Pet And Mri Raw Data.
-
-- [hdr-mri](https://github.com/shakes76/sHDR)
->- Languages: c++
->- License: Apache
->- Tags: reconstruction
->- Takes As Input Coregistered Mr Images (Preferrably Of Different Contrasts), Non-Linearly Combines Them And Outputs A Single Hdr Mr Image.
-
-- [gadgetron](https://github.com/gadgetron/gadgetron)
->- Languages: c++
->- License: MIT
->- Tags: reconstruction
->- Open Source Project For Medical Image Reconstruction
-
-- [powergrid](https://github.com/mrfil/PowerGrid)
->- Languages: c++
->- License: MIT
->- Tags: reconstruction
->- Cpu And Gpu Accelerated Iterative Magnetic Resonance Imaging Reconstruction
-
-- [tensorflow-mri](https://github.com/mrphys/tensorflow-mri)
->- Languages: python
->- License: Apache
->- Tags: reconstruction, ML
->- Library Of Tensorflow Operators For Computational Mri
-
-- [mri-reco](https://github.com/MagneticResonanceImaging/MRIReco.jl)
->- Languages: julia
->- License: MIT
->- Tags: reconstruction
->- Julia Package For Magnetic Resonance Imaging
-
-- [nlsam](https://github.com/samuelstjean/nlsam)
->- Languages: python
->- License: GPLv3
->- Tags: reconstruction
->- Implementation For The Non Local Spatial And Angular Matching (Nlsam) Denoising Algorithm For Diffusion Mri
-
-- [bart](http://mrirecon.github.io/bart/)
->- Languages: c, c++
->- License: BSD
->- Tags: reconstruction
->- Free And Open-Source Image-Reconstruction Framework For Computational Magnetic Resonance Imaging
-
-- [nesvor](https://github.com/daviddmc/NeSVoR)
->- Languages: python
->- License: MIT
->- Tags: reconstruction, fetal
->- Gpu-Accelerated Slice-To-Volume Reconstruction (Both Rigid And Deformable)
-
-- [niftymic](https://github.com/gift-surg/NiftyMIC)
->- Languages: python
->- License: BSD
->- Tags: reconstruction, fetal
->- Toolkit For Research Developed Within The Gift-Surg Project To Reconstruct An Isotropic, High-Resolution Volume From Multiple, Possibly Motion-Corrupted, Stacks Of Low-Resolution 2D Slices
-
-- [svrtk](https://github.com/SVRTK/SVRTK)
->- Languages: c++
->- License: Apache
->- Tags: reconstruction, fetal
->- Mirtk Based Svr Reconstruction
-
-- [mialsuperresolutiontoolkit](https://github.com/Medical-Image-Analysis-Laboratory/mialsuperresolutiontoolkit)
->- Languages: c++, python
->- License: BSD
->- Tags: reconstruction, fetal
->- C++ And Python Tools Necessary To Perform Motion-Robust Super-Resolution Fetal Mri Reconstruction
-
-- [qslprep](https://github.com/PennLINC/qsiprep)
->- Languages: python
->- License: BSD
->- Tags: processing, reconstruction, analysis
->- Preprocessing And Reconstruction Of Diffusion Mri
-
-- [direct](https://github.com/NKI-AI/direct)
->- Languages: python
->- License: Apache
->- Tags: reconstruction
->- Deep Learning Framework For Mri Reconstruction
-
-- [synthseg](https://github.com/BBillot/SynthSeg)
->- Languages: python
->- License: Apache
->- Tags: ML, reconstruction
->- Deep Learning Tool For Segmentation Of Brain Scans Of Any Contrast And Resolution
-
 ### Analysis
 - [slicer](https://github.com/Slicer/Slicer)
->- Languages: python, c++
+>- Languages: `Python`, `C++`
 >- License: BSD
 >- Tags: simulation, analysis, visualisation
->- Open Source Software Package For Visualization And Image Analysis.
+>- A open source software package for visualization and image analysis.
 
 - [ukat](https://github.com/UKRIN-MAPS/ukat)
->- Languages: python
+>- Languages: `Python`
 >- License: GPLv3
 >- Tags: analysis, renal
->- Ukat Is A Vendor Agnostic Framework For The Analysis Of Quantitative Renal Mri Data
+>- A ukat is a vendor agnostic framework for the analysis of quantitative renal mri data
 
 - [freesurfer](https://github.com/freesurfer/freesurfer)
->- Languages: c++, c, python
+>- Languages: `C++`, `C`, `Python`
 >- License: GPLv3
 >- Tags: analysis, visualisation, brain
->- Analysis And Visualization Of Neuroimaging Data From Cross-Sectional And Longitudinal Studies
+>- A analysis and visualization of neuroimaging data from cross-sectional and longitudinal studies
 
 - [simple-itk](https://github.com/SimpleITK/SimpleITK)
->- Languages: c++, python, R
+>- Languages: `C++`, `Python`, `R`
 >- License: Apache
 >- Tags: segmentation, analysis
->- Image Analysis Toolkit With A Large Number Of Components Supporting General Filtering Operations, Image Segmentation And Registration
+>- A image analysis toolkit with a large number of components supporting general filtering operations, image segmentation and registration
 
 - [quit](https://github.com/spinicist/QUIT)
->- Languages: c++, python
+>- Languages: `C++`, `Python`
 >- License: MPL
 >- Tags: analysis
->- Collection Of Programs For Processing Quantitative Mri Data
+>- A collection of programs for processing quantitative mri data
 
 - [madym](https://gitlab.com/manchester_qbi/manchester_qbi_public/madym_cxx)
->- Languages: c++
+>- Languages: `C++`
 >- License: Apache
 >- Tags: analysis, processing
->- C++ Toolkit For Quantative Dce-Mri And Dwi-Mri Analysis
+>- A c++ toolkit for quantative dce-mri and dwi-mri analysis
 
 - [myoqmri](https://github.com/fsantini/MyoQMRI)
->- Languages: python
+>- Languages: `Python`
 >- License: GPLv3
 >- Tags: analysis, muscle
->- Quantitative Mri Of The Muscles
+>- A quantitative mri of the muscles
 
 - [mrqy](https://github.com/ccipd/MRQy)
->- Languages: javascript, python
+>- Languages: `Javascript`, `Python`
 >- License: BSD
 >- Tags: qa, analysis
->- Generate Several Tags And Noise/Information Measurements For Quality Assessment
+>- A generate several tags and noise/information measurements for quality assessment
 
 - [fastmri](https://github.com/facebookresearch/fastMRI)
->- Languages: python
+>- Languages: `Python`
 >- License: MIT
 >- Tags: ML, analysis, data
->- Research Project From Facebook Ai Research (Fair) And Nyu Langone Health To Investigate The Use Of Ai To Make Mri Scans Faster
+>- A research project from facebook ai research (fair) and nyu langone health to investigate the use of ai to make mri scans faster
 
 - [affirm](https://github.com/allard-shi/affirm)
->- Languages: python
+>- Languages: `Python`
 >- License: MIT
 >- Tags: analysis, fetal
->- Deep Recursive Fetal Motion Estimation And Correction Based On Slice And Volume Affinity Fusion
+>- A deep recursive fetal motion estimation and correction based on slice and volume affinity fusion
 
 - [mri-research-tools](https://github.com/korbinian90/MriResearchTools.jl)
->- Languages: julia
+>- Languages: `Julia`
 >- License: MIT
 >- Tags: processing, analysis, simulation
->- Specialized Tools For Mri
+>- A specialized tools for mri
 
 - [dcemri](https://github.com/davidssmith/DCEMRI.jl)
->- Languages: julia
+>- Languages: `Julia`
 >- License: MIT
 >- Tags: analysis
->- Open Source Toolkit For Dynamic Contrast Enhanced Mri Analysis
+>- A open source toolkit for dynamic contrast enhanced mri analysis
 
 - [qslprep](https://github.com/PennLINC/qsiprep)
->- Languages: python
+>- Languages: `Python`
 >- License: BSD
 >- Tags: processing, reconstruction, analysis
->- Preprocessing And Reconstruction Of Diffusion Mri
+>- A preprocessing and reconstruction of diffusion mri
 
 - [braingraph](https://github.com/cwatson/brainGraph)
->- Languages: r
+>- Languages: `R`
 >- License: None
 >- Tags: analysis
->- R Package For Performing Graph Theory Analyses Of Brain Mri Data
+>- A r package for performing graph theory analyses of brain mri data
 
 - [mriqc](https://github.com/nipreps/mriqc)
->- Languages: javascript, python
+>- Languages: `Javascript`, `Python`
 >- License: Apache
 >- Tags: qa, analysis
->- Extracts No-Reference Iqms (Image Quality Metrics) From Structural (T1W And T2W) And Functional Mri (Magnetic Resonance Imaging) Data
+>- A extracts no-reference iqms (image quality metrics) from structural (t1w and t2w) and functional mri (magnetic resonance imaging) data
+
+- [nipype](https://github.com/nipy/nipype)
+>- Languages: `Python`
+>- License: Apache
+>- Tags: analysis, brain
+>- A python project that provides a uniform interface to existing neuroimaging software and facilitates interaction between these packages within a single workflow
+
+- [nipy](https://github.com/nipy/nipy)
+>- Languages: `Python`, `C`
+>- License: BSD
+>- Tags: analysis, brain
+>- A platform-independent python environment for the analysis of functional brain imaging data using an open development model
+
+- [nitime](https://github.com/nipy/nitime)
+>- Languages: `Python`
+>- License: BSD
+>- Tags: analysis, brain
+>- A contains a core of numerical algorithms for time-series analysis both in the time and spectral domains, a set of container objects to represent time-series, and auxiliary objects that expose a high level interface to the numerical machinery and make common analysis tasks easy to express with compact and semantically clear code
+
+- [popeye](https://github.com/kdesimone/popeye)
+>- Languages: `Python`
+>- License: MIT
+>- Tags: analysis, brain
+>- A python module for estimating population receptive fields from fmri data built on top of scipy
+
+- [nilean](https://github.com/nilearn/nilearn)
+>- Languages: `Python`
+>- License: BSD
+>- Tags: ml, analysis, brain
+>- A machine learning for neuroimaging in python
+
+- [pymvpa](https://github.com/PyMVPA/PyMVPA)
+>- Languages: `Python`
+>- License: MIT
+>- Tags: ml, analysis, brain
+>- A multivariate pattern analysis in python
 
 ### Processing
 - [vespa](https://github.com/vespa-mrs/vespa/)
->- Languages: python
+>- Languages: `Python`
 >- License: BSD
 >- Tags: simulation, data, processing
->- Integrated, Open Source, Open Development Platform For Magnetic Resonance Spectroscopy (Mrs) Research For Rf Pulse Design, Spectral Simulation And Prototyping, Creating Synthetic Mrs Data Sets And Interactive Spectral Data Processing And Analysis.
+>- A integrated, open source, open development platform for magnetic resonance spectroscopy (mrs) research for rf pulse design, spectral simulation and prototyping, creating synthetic mrs data sets and interactive spectral data processing and analysis.
 
 - [scanhub](https://github.com/brain-link/scanhub)
->- Languages: python
+>- Languages: `Python`
 >- License: GPLv3
 >- Tags: simulation, reconstruction, processing
->- Multi Modal Acquisition Software, Which Allows Individualizable, Modular And Cloud-Based Processing Of Functional And Anatomical Medical Images.
+>- A multi modal acquisition software, which allows individualizable, modular and cloud-based processing of functional and anatomical medical images.
 
 - [qmritools](https://github.com/mfroeling/QMRITools)
->- Languages: mathematica
+>- Languages: `Mathematica`
 >- License: BSD
 >- Tags: simulation, processing, visualisation
->- Collection Of Tools And Functions For Processing Quantitative Mri Data.
+>- A collection of tools and functions for processing quantitative mri data.
 
 - [spinal-chord-toolbox](https://github.com/spinalcordtoolbox/spinalcordtoolbox)
->- Languages: python
+>- Languages: `Python`
 >- License: LGPLv3
 >- Tags: segmentation, processing, spinal
->- Comprehensive, Free And Open-Source Set Of Command-Line Tools Dedicated To The Processing And Analysis Of Spinal Cord Mri Data
+>- A comprehensive, free and open-source set of command-line tools dedicated to the processing and analysis of spinal cord mri data
 
 - [madym](https://gitlab.com/manchester_qbi/manchester_qbi_public/madym_cxx)
->- Languages: c++
+>- Languages: `C++`
 >- License: Apache
 >- Tags: analysis, processing
->- C++ Toolkit For Quantative Dce-Mri And Dwi-Mri Analysis
+>- A c++ toolkit for quantative dce-mri and dwi-mri analysis
 
 - [decaes](https://github.com/jondeuce/DECAES.jl)
->- Languages: julia
+>- Languages: `Julia`
 >- License: MIT
 >- Tags: processing
->- Julia Implementation Of The Matlab Toolbox From The Ubc Mri Research Centre For Computing Voxelwise T2-Distributions From Multi Spin-Echo Mri Images Using The Extended Phase Graph Algorithm With Stimulated Echo Corrections
+>- A julia implementation of the matlab toolbox from the ubc mri research centre for computing voxelwise t2-distributions from multi spin-echo mri images using the extended phase graph algorithm with stimulated echo corrections
 
 - [mrtrix3](https://github.com/MRtrix3/mrtrix3)
->- Languages: c++, python
+>- Languages: `C++`, `Python`
 >- License: MPL
 >- Tags: processing
->- Set Of Tools To Perform Various Types Of Diffusion Mri Analyses, From Various Forms Of Tractography Through To Next-Generation Group-Level Analyses
+>- A set of tools to perform various types of diffusion mri analyses, from various forms of tractography through to next-generation group-level analyses
 
 - [smriprep](https://github.com/nipreps/smriprep)
->- Languages: python
+>- Languages: `Python`
 >- License: Apache
 >- Tags: processing
->- Structural Magnetic Resonance Imaging (Smri) Data Preprocessing Pipeline That Is Designed To Provide An Easily Accessible, State-Of-The-Art Interface That Is Robust To Variations In Scan Acquisition Protocols And That Requires Minimal User Input, While Providing Easily Interpretable And Comprehensive Error And Output Reporting
+>- A structural magnetic resonance imaging (smri) data preprocessing pipeline that is designed to provide an easily accessible, state-of-the-art interface that is robust to variations in scan acquisition protocols and that requires minimal user input, while providing easily interpretable and comprehensive error and output reporting
 
 - [flow4d](https://github.com/saitta-s/flow4D)
->- Languages: python
+>- Languages: `Python`
 >- License: MIT
 >- Tags: processing
->- Work With 4D Flow Mri Acquisitions For Cfd Applications
+>- A work with 4d flow mri acquisitions for cfd applications
 
 - [mri-research-tools](https://github.com/korbinian90/MriResearchTools.jl)
->- Languages: julia
+>- Languages: `Julia`
 >- License: MIT
 >- Tags: processing, analysis, simulation
->- Specialized Tools For Mri
+>- A specialized tools for mri
 
 - [pydeface](https://github.com/poldracklab/pydeface)
->- Languages: python
+>- Languages: `Python`
 >- License: MIT
 >- Tags: processing
->- A Tool To Remove Facial Structure From Mri Images.
+>- A a tool to remove facial structure from mri images.
 
 - [mritopng](https://github.com/danishm/mritopng)
->- Languages: python
+>- Languages: `Python`
 >- License: MIT
 >- Tags: processing
->- A Simple Python Module To Make It Easy To Batch Convert Dicom Files To Png Images.
+>- A a simple python module to make it easy to batch convert dicom files to png images.
 
 - [qslprep](https://github.com/PennLINC/qsiprep)
->- Languages: python
+>- Languages: `Python`
 >- License: BSD
 >- Tags: processing, reconstruction, analysis
->- Preprocessing And Reconstruction Of Diffusion Mri
+>- A preprocessing and reconstruction of diffusion mri
 
 - [intensity-normalization](https://github.com/jcreinhold/intensity-normalization)
->- Languages: python
+>- Languages: `Python`
 >- License: Apache
 >- Tags: processing
->- Various Methods To Normalize The Intensity Of Various Modalities Of Magnetic Resonance (Mr) Images, E.G., T1-Weighted (T1-W), T2-Weighted (T2-W), Fluid-Attenuated Inversion Recovery (Flair), And Proton Density-Weighted (Pd-W)
+>- A various methods to normalize the intensity of various modalities of magnetic resonance (mr) images, e.g., t1-weighted (t1-w), t2-weighted (t2-w), fluid-attenuated inversion recovery (flair), and proton density-weighted (pd-w)
+
+- [monai](https://github.com/Project-MONAI/MONAI)
+>- Languages: `Python`
+>- License: Apache
+>- Tags: ml, processing, segmentation
+>- A ai toolkit for healthcare imaging
+
+- [torchio](https://github.com/fepegar/torchio)
+>- Languages: `Python`
+>- License: Apache
+>- Tags: ml, processing
+>- A medical imaging toolkit for deep learning
+
+- [medical-torch](https://github.com/perone/medicaltorch?tab=readme-ov-file)
+>- Languages: `Python`
+>- License: Apache
+>- Tags: ml, processing
+>- A open-source framework for pytorch, implementing an extensive set of loaders, pre-processors and datasets for medical imaging
+
+- [clinicaldl](https://github.com/aramis-lab/clinicadl)
+>- Languages: `Python`
+>- License: MIT
+>- Tags: ml, processing
+>- A framework for the reproducible processing of neuroimaging data with deep learning methods
+
+- [brats-toolkit](https://github.com/neuronflow/BraTS-Toolkit)
+>- Languages: `Python`
+>- License: AGPLv3
+>- Tags: ml, segmentation, processing
+>- A code to preprocess, segment, and fuse glioma mri scans based on the brats toolkit manuscript
+
+### Reconstruction
+- [scanhub](https://github.com/brain-link/scanhub)
+>- Languages: `Python`
+>- License: GPLv3
+>- Tags: simulation, reconstruction, processing
+>- A multi modal acquisition software, which allows individualizable, modular and cloud-based processing of functional and anatomical medical images.
+
+- [eptlib](https://github.com/eptlib/eptlib)
+>- Languages: `C++`, `Python`
+>- License: MIT
+>- Tags: reconstruction
+>- A collection of c++ implementations of electric properties tomography (ept) methods.
+
+- [sirf](https://github.com/SyneRBI/SIRF?tab=readme-ov-file)
+>- Languages: `C++`, `Python`
+>- License: GPLv2
+>- Tags: reconstruction
+>- A open source toolkit for the reconstruction of pet and mri raw data.
+
+- [hdr-mri](https://github.com/shakes76/sHDR)
+>- Languages: `C++`
+>- License: Apache
+>- Tags: reconstruction
+>- A takes as input coregistered mr images (preferrably of different contrasts), non-linearly combines them and outputs a single hdr mr image.
+
+- [gadgetron](https://github.com/gadgetron/gadgetron)
+>- Languages: `C++`
+>- License: MIT
+>- Tags: reconstruction
+>- A open source project for medical image reconstruction
+
+- [powergrid](https://github.com/mrfil/PowerGrid)
+>- Languages: `C++`
+>- License: MIT
+>- Tags: reconstruction
+>- A cpu and gpu accelerated iterative magnetic resonance imaging reconstruction
+
+- [tensorflow-mri](https://github.com/mrphys/tensorflow-mri)
+>- Languages: `Python`
+>- License: Apache
+>- Tags: reconstruction, ML
+>- A library of tensorflow operators for computational mri
+
+- [mri-reco](https://github.com/MagneticResonanceImaging/MRIReco.jl)
+>- Languages: `Julia`
+>- License: MIT
+>- Tags: reconstruction
+>- A julia package for magnetic resonance imaging
+
+- [nlsam](https://github.com/samuelstjean/nlsam)
+>- Languages: `Python`
+>- License: GPLv3
+>- Tags: reconstruction
+>- A implementation for the non local spatial and angular matching (nlsam) denoising algorithm for diffusion mri
+
+- [bart](http://mrirecon.github.io/bart/)
+>- Languages: `C`, `C++`
+>- License: BSD
+>- Tags: reconstruction
+>- A free and open-source image-reconstruction framework for computational magnetic resonance imaging
+
+- [nesvor](https://github.com/daviddmc/NeSVoR)
+>- Languages: `Python`
+>- License: MIT
+>- Tags: reconstruction, fetal
+>- A gpu-accelerated slice-to-volume reconstruction (both rigid and deformable)
+
+- [niftymic](https://github.com/gift-surg/NiftyMIC)
+>- Languages: `Python`
+>- License: BSD
+>- Tags: reconstruction, fetal
+>- A toolkit for research developed within the gift-surg project to reconstruct an isotropic, high-resolution volume from multiple, possibly motion-corrupted, stacks of low-resolution 2d slices
+
+- [svrtk](https://github.com/SVRTK/SVRTK)
+>- Languages: `C++`
+>- License: Apache
+>- Tags: reconstruction, fetal
+>- A mirtk based svr reconstruction
+
+- [mialsuperresolutiontoolkit](https://github.com/Medical-Image-Analysis-Laboratory/mialsuperresolutiontoolkit)
+>- Languages: `C++`, `Python`
+>- License: BSD
+>- Tags: reconstruction, fetal
+>- A c++ and python tools necessary to perform motion-robust super-resolution fetal mri reconstruction
+
+- [qslprep](https://github.com/PennLINC/qsiprep)
+>- Languages: `Python`
+>- License: BSD
+>- Tags: processing, reconstruction, analysis
+>- A preprocessing and reconstruction of diffusion mri
+
+- [direct](https://github.com/NKI-AI/direct)
+>- Languages: `Python`
+>- License: Apache
+>- Tags: reconstruction
+>- A deep learning framework for mri reconstruction
+
+- [synthseg](https://github.com/BBillot/SynthSeg)
+>- Languages: `Python`
+>- License: Apache
+>- Tags: ML, reconstruction
+>- A deep learning tool for segmentation of brain scans of any contrast and resolution
+
+### Ml
+- [monai](https://github.com/Project-MONAI/MONAI)
+>- Languages: `Python`
+>- License: Apache
+>- Tags: ml, processing, segmentation
+>- A ai toolkit for healthcare imaging
+
+- [medical-detection-toolkit](https://github.com/MIC-DKFZ/medicaldetectiontoolkit)
+>- Languages: `Python`
+>- License: Apache
+>- Tags: ml, segmentation
+>- A contains 2d + 3d implementations of prevalent object detectors such as mask r-cnn, retina net, retina u-net, as well as a training and inference framework focused on dealing with medical images
+
+- [torchio](https://github.com/fepegar/torchio)
+>- Languages: `Python`
+>- License: Apache
+>- Tags: ml, processing
+>- A medical imaging toolkit for deep learning
+
+- [deepmedic](https://github.com/deepmedic/deepmedic)
+>- Languages: `Python`
+>- License: BSD
+>- Tags: ml, segmentation
+>- A efficient multi-scale 3d convolutional neural network for segmentation of 3d medical scans
+
+- [medical-torch](https://github.com/perone/medicaltorch?tab=readme-ov-file)
+>- Languages: `Python`
+>- License: Apache
+>- Tags: ml, processing
+>- A open-source framework for pytorch, implementing an extensive set of loaders, pre-processors and datasets for medical imaging
+
+- [medical-zoo](https://github.com/black0017/MedicalZooPytorch)
+>- Languages: `Python`
+>- License: MIT
+>- Tags: ml, segmentation
+>- A pytorch-based deep learning framework for multi-modal 2d/3d medical image segmentation
+
+- [nilean](https://github.com/nilearn/nilearn)
+>- Languages: `Python`
+>- License: BSD
+>- Tags: ml, analysis, brain
+>- A machine learning for neuroimaging in python
+
+- [pymvpa](https://github.com/PyMVPA/PyMVPA)
+>- Languages: `Python`
+>- License: MIT
+>- Tags: ml, analysis, brain
+>- A multivariate pattern analysis in python
+
+- [tractseg](https://github.com/MIC-DKFZ/TractSeg)
+>- Languages: `Python`
+>- License: Apache
+>- Tags: ml, segmentation, brain
+>- A automatic white matter bundle segmentation
+
+- [clinicaldl](https://github.com/aramis-lab/clinicadl)
+>- Languages: `Python`
+>- License: MIT
+>- Tags: ml, processing
+>- A framework for the reproducible processing of neuroimaging data with deep learning methods
+
+- [brats-toolkit](https://github.com/neuronflow/BraTS-Toolkit)
+>- Languages: `Python`
+>- License: AGPLv3
+>- Tags: ml, segmentation, processing
+>- A code to preprocess, segment, and fuse glioma mri scans based on the brats toolkit manuscript
 
 ### Simulation
 - [pycoilgen](https://github.com/kev-m/pyCoilGen)
->- Languages: python
+>- Languages: `Python`
 >- License: GPLv3
 >- Tags: simulation
->- Open Source Tool For Generating Coil Winding Layouts, Such As Gradient Field Coils, Within The Mri And Nmr Environments.
+>- A open source tool for generating coil winding layouts, such as gradient field coils, within the mri and nmr environments.
 
 - [virtual-mri-scanner](https://github.com/imr-framework/virtual-scanner)
->- Languages: python
+>- Languages: `Python`
 >- License: AGPLv3
 >- Tags: simulation
->- End-To-End Hybrid Magnetic Resonance Imaging (Mri) Simulator/Console Designed To Be Zero-Footprint, Modular, And Supported By Open-Source Standards.
+>- A end-to-end hybrid magnetic resonance imaging (mri) simulator/console designed to be zero-footprint, modular, and supported by open-source standards.
 
 - [cosimpy](https://github.com/umbertozanovello/CoSimPy)
->- Languages: python
+>- Languages: `Python`
 >- License: MIT
 >- Tags: simulation
->- Open Source Python Library Aiming To Combine Results From Electromagnetic (Em) Simulation With Circuits Analysis Through A Cosimulation Environment.
+>- A open source python library aiming to combine results from electromagnetic (em) simulation with circuits analysis through a cosimulation environment.
 
 - [vespa](https://github.com/vespa-mrs/vespa/)
->- Languages: python
+>- Languages: `Python`
 >- License: BSD
 >- Tags: simulation, data, processing
->- Integrated, Open Source, Open Development Platform For Magnetic Resonance Spectroscopy (Mrs) Research For Rf Pulse Design, Spectral Simulation And Prototyping, Creating Synthetic Mrs Data Sets And Interactive Spectral Data Processing And Analysis.
+>- A integrated, open source, open development platform for magnetic resonance spectroscopy (mrs) research for rf pulse design, spectral simulation and prototyping, creating synthetic mrs data sets and interactive spectral data processing and analysis.
 
 - [scanhub](https://github.com/brain-link/scanhub)
->- Languages: python
+>- Languages: `Python`
 >- License: GPLv3
 >- Tags: simulation, reconstruction, processing
->- Multi Modal Acquisition Software, Which Allows Individualizable, Modular And Cloud-Based Processing Of Functional And Anatomical Medical Images.
+>- A multi modal acquisition software, which allows individualizable, modular and cloud-based processing of functional and anatomical medical images.
 
 - [slicer](https://github.com/Slicer/Slicer)
->- Languages: python, c++
+>- Languages: `Python`, `C++`
 >- License: BSD
 >- Tags: simulation, analysis, visualisation
->- Open Source Software Package For Visualization And Image Analysis.
+>- A open source software package for visualization and image analysis.
 
 - [qmritools](https://github.com/mfroeling/QMRITools)
->- Languages: mathematica
+>- Languages: `Mathematica`
 >- License: BSD
 >- Tags: simulation, processing, visualisation
->- Collection Of Tools And Functions For Processing Quantitative Mri Data.
+>- A collection of tools and functions for processing quantitative mri data.
 
 - [pypulseq](https://github.com/imr-framework/pypulseq/)
->- Languages: python
+>- Languages: `Python`
 >- License: AGPLv3
 >- Tags: simulation
->- Enables Vendor-Neutral Pulse Sequence Design In Python [1,2]. The Pulse Sequences Can Be Exported As A .Seq File To Be Run On Siemens/Ge/Bruker Hardware By Leveraging Their Respective Pulseq Interpreters.
+>- A enables vendor-neutral pulse sequence design in python [1,2]. the pulse sequences can be exported as a .seq file to be run on siemens/ge/bruker hardware by leveraging their respective pulseq interpreters.
 
 - [koma](https://github.com/JuliaHealth/KomaMRI.jl)
->- Languages: julia
+>- Languages: `Julia`
 >- License: MIT
 >- Tags: simulation
->- Pulseq-Compatible Framework To Efficiently Simulate Magnetic Resonance Imaging (Mri) Acquisitions
+>- A pulseq-compatible framework to efficiently simulate magnetic resonance imaging (mri) acquisitions
 
 - [gropt](https://github.com/mloecher/gropt)
->- Languages: c, python
+>- Languages: `C`, `Python`
 >- License: GPLv3
 >- Tags: simulation
->-  Toolbox For Mri Gradient Optimization
+>- A  toolbox for mri gradient optimization
 
 - [disimpy](https://github.com/kerkelae/disimpy)
->- Languages: python
+>- Languages: `Python`
 >- License: MIT
 >- Tags: simulation
->- Python Package For Generating Simulated Diffusion-Weighted Mr Signals That Can Be Useful In The Development And Validation Of Data Acquisition And Analysis Methods
+>- A python package for generating simulated diffusion-weighted mr signals that can be useful in the development and validation of data acquisition and analysis methods
 
 - [mri-generalized-bloch](https://github.com/JakobAsslaender/MRIgeneralizedBloch.jl)
->- Languages: julia
+>- Languages: `Julia`
 >- License: MIT
 >- Tags: simulation
->- Julia Package That Implements The Generalized Bloch Equations For Modeling The Dynamics Of The Semi-Solid Spin Pool In Magnetic Resonance Imaging (Mri), And Its Exchange With The Free Spin Pool
+>- A julia package that implements the generalized bloch equations for modeling the dynamics of the semi-solid spin pool in magnetic resonance imaging (mri), and its exchange with the free spin pool
 
 - [mri-research-tools](https://github.com/korbinian90/MriResearchTools.jl)
->- Languages: julia
+>- Languages: `Julia`
 >- License: MIT
 >- Tags: processing, analysis, simulation
->- Specialized Tools For Mri
-
-### Visualisation
-- [slicer](https://github.com/Slicer/Slicer)
->- Languages: python, c++
->- License: BSD
->- Tags: simulation, analysis, visualisation
->- Open Source Software Package For Visualization And Image Analysis.
-
-- [qmritools](https://github.com/mfroeling/QMRITools)
->- Languages: mathematica
->- License: BSD
->- Tags: simulation, processing, visualisation
->- Collection Of Tools And Functions For Processing Quantitative Mri Data.
-
-- [ukf-tractography](https://github.com/pnlbwh/ukftractography)
->- Languages: c, c++
->- License: BSD
->- Tags: visualisation, brain
->- Framework Which Uses An Unscented Kalman Filter For Performing Tractography
-
-- [freesurfer](https://github.com/freesurfer/freesurfer)
->- Languages: c++, c, python
->- License: GPLv3
->- Tags: analysis, visualisation, brain
->- Analysis And Visualization Of Neuroimaging Data From Cross-Sectional And Longitudinal Studies
-
-- [gif_your_nifti](https://github.com/miykael/gif_your_nifti)
->- Languages: python
->- License: BSD
->- Tags: visualisation
->- Create Nice Looking Gifs From Your Nifti (.Nii Or .Nii.Gz) Files With A Simple Command
-
-- [brainchop](https://github.com/neuroneural/brainchop)
->- Languages: javascript, python
->- License: MIT
->- Tags: segmentation, visualisation
->- In-Browser 3D Mri Rendering And Segmentation
-
-- [mri-viewer](https://github.com/epam/mriviewer)
->- Languages: javascript
->- License: Apache
->- Tags: visualisation
->- High Performance Web Tool For Advanced Visualization (Both In 2D And 3D Modes) Medical Volumetric Data, Provided In Popular File Formats: Dicom, Nifti, Ktx, Hdr
+>- A specialized tools for mri
 
 ### Segmentation
 - [dl-direct](https://github.com/SCAN-NRAD/DL-DiReCT)
->- Languages: python
+>- Languages: `Python`
 >- License: BSD
 >- Tags: segmentation
->- Combines A Deep Learning-Based Neuroanatomy Segmentation And Cortex Parcellation With A Diffeomorphic Registration Technique To Measure Cortical Thickness From T1W Mri
+>- A combines a deep learning-based neuroanatomy segmentation and cortex parcellation with a diffeomorphic registration technique to measure cortical thickness from t1w mri
 
 - [dafne](https://github.com/dafne-imaging/dafne)
->- Languages: python
+>- Languages: `Python`
 >- License: GPLv3
 >- Tags: segmentation
->- Program For The Segmentation Of Medical Images. It Relies On A Server To Provide Deep Learning Models To Aid The Segmentation, And Incremental Learning Is Used To Improve The Performance
+>- A program for the segmentation of medical images. it relies on a server to provide deep learning models to aid the segmentation, and incremental learning is used to improve the performance
 
 - [spinal-chord-toolbox](https://github.com/spinalcordtoolbox/spinalcordtoolbox)
->- Languages: python
+>- Languages: `Python`
 >- License: LGPLv3
 >- Tags: segmentation, processing, spinal
->- Comprehensive, Free And Open-Source Set Of Command-Line Tools Dedicated To The Processing And Analysis Of Spinal Cord Mri Data
+>- A comprehensive, free and open-source set of command-line tools dedicated to the processing and analysis of spinal cord mri data
 
 - [dwybss](https://github.com/mmromero/dwybss)
->- Languages: python
+>- Languages: `Python`
 >- License: LGPLv3
 >- Tags: segmentation, brain
->- Separate Microstructure Tissue Components From The Diffusion Mri Signal, Characterize The Volume Fractions, And T2 Maps Of These Compartments
+>- A separate microstructure tissue components from the diffusion mri signal, characterize the volume fractions, and t2 maps of these compartments
 
 - [simple-itk](https://github.com/SimpleITK/SimpleITK)
->- Languages: c++, python, R
+>- Languages: `C++`, `Python`, `R`
 >- License: Apache
 >- Tags: segmentation, analysis
->- Image Analysis Toolkit With A Large Number Of Components Supporting General Filtering Operations, Image Segmentation And Registration
+>- A image analysis toolkit with a large number of components supporting general filtering operations, image segmentation and registration
 
 - [quicknat](https://github.com/ai-med/quickNAT_pytorch)
->- Languages: python
+>- Languages: `Python`
 >- License: MIT
 >- Tags: segmentation, brain
->- Fully Convolutional Network For Quick And Accurate Segmentation Of Neuroanatomy And Quality Control Of Structure-Wise Segmentations
+>- A fully convolutional network for quick and accurate segmentation of neuroanatomy and quality control of structure-wise segmentations
 
 - [brainchop](https://github.com/neuroneural/brainchop)
->- Languages: javascript, python
+>- Languages: `Javascript`, `Python`
 >- License: MIT
 >- Tags: segmentation, visualisation
->- In-Browser 3D Mri Rendering And Segmentation
+>- A in-browser 3d mri rendering and segmentation
 
-### Fetal
-- [nesvor](https://github.com/daviddmc/NeSVoR)
->- Languages: python
->- License: MIT
->- Tags: reconstruction, fetal
->- Gpu-Accelerated Slice-To-Volume Reconstruction (Both Rigid And Deformable)
-
-- [affirm](https://github.com/allard-shi/affirm)
->- Languages: python
->- License: MIT
->- Tags: analysis, fetal
->- Deep Recursive Fetal Motion Estimation And Correction Based On Slice And Volume Affinity Fusion
-
-- [niftymic](https://github.com/gift-surg/NiftyMIC)
->- Languages: python
->- License: BSD
->- Tags: reconstruction, fetal
->- Toolkit For Research Developed Within The Gift-Surg Project To Reconstruct An Isotropic, High-Resolution Volume From Multiple, Possibly Motion-Corrupted, Stacks Of Low-Resolution 2D Slices
-
-- [svrtk](https://github.com/SVRTK/SVRTK)
->- Languages: c++
+- [monai](https://github.com/Project-MONAI/MONAI)
+>- Languages: `Python`
 >- License: Apache
->- Tags: reconstruction, fetal
->- Mirtk Based Svr Reconstruction
+>- Tags: ml, processing, segmentation
+>- A ai toolkit for healthcare imaging
 
-- [mialsuperresolutiontoolkit](https://github.com/Medical-Image-Analysis-Laboratory/mialsuperresolutiontoolkit)
->- Languages: c++, python
+- [medical-detection-toolkit](https://github.com/MIC-DKFZ/medicaldetectiontoolkit)
+>- Languages: `Python`
+>- License: Apache
+>- Tags: ml, segmentation
+>- A contains 2d + 3d implementations of prevalent object detectors such as mask r-cnn, retina net, retina u-net, as well as a training and inference framework focused on dealing with medical images
+
+- [deepmedic](https://github.com/deepmedic/deepmedic)
+>- Languages: `Python`
 >- License: BSD
->- Tags: reconstruction, fetal
->- C++ And Python Tools Necessary To Perform Motion-Robust Super-Resolution Fetal Mri Reconstruction
+>- Tags: ml, segmentation
+>- A efficient multi-scale 3d convolutional neural network for segmentation of 3d medical scans
 
-- [fetal-iqa](https://github.com/daviddmc/fetal-IQA)
->- Languages: python
+- [medical-zoo](https://github.com/black0017/MedicalZooPytorch)
+>- Languages: `Python`
 >- License: MIT
->- Tags: qa, fetal
->-  Image Quality Assessment (Iqa) Method For Fetal Mri
+>- Tags: ml, segmentation
+>- A pytorch-based deep learning framework for multi-modal 2d/3d medical image segmentation
 
-### Data
-- [vespa](https://github.com/vespa-mrs/vespa/)
->- Languages: python
->- License: BSD
->- Tags: simulation, data, processing
->- Integrated, Open Source, Open Development Platform For Magnetic Resonance Spectroscopy (Mrs) Research For Rf Pulse Design, Spectral Simulation And Prototyping, Creating Synthetic Mrs Data Sets And Interactive Spectral Data Processing And Analysis.
+- [tractseg](https://github.com/MIC-DKFZ/TractSeg)
+>- Languages: `Python`
+>- License: Apache
+>- Tags: ml, segmentation, brain
+>- A automatic white matter bundle segmentation
 
-- [ismrm-raw-data-format](https://ismrmrd.github.io/apidocs/1.5.0/)
->- Languages: c, c++, python
->- License: MIT
->- Tags: data
->-  Common Raw Data Format, Which Attempts To Capture The Data Fields That Are Required To Describe The Magnetic Resonance Experiment With Enough Detail To Reconstruct Images
-
-- [fastmri](https://github.com/facebookresearch/fastMRI)
->- Languages: python
->- License: MIT
->- Tags: ML, analysis, data
->- Research Project From Facebook Ai Research (Fair) And Nyu Langone Health To Investigate The Use Of Ai To Make Mri Scans Faster
-
-- [nlft](https://github.com/JuliaNeuroscience/NIfTI.jl)
->- Languages: julia
->- License: MIT
->- Tags: data
->- Julia Module For Reading/Writing Nifti Mri Files
-
-- [openmorph](https://github.com/cMadan/openMorph)
->- Languages: jupyter
->- License: None
->- Tags: data
->- Curated List Of Open-Access Databases With Human Structural Mri Data
+- [brats-toolkit](https://github.com/neuronflow/BraTS-Toolkit)
+>- Languages: `Python`
+>- License: AGPLv3
+>- Tags: ml, segmentation, processing
+>- A code to preprocess, segment, and fuse glioma mri scans based on the brats toolkit manuscript
 
 ### Brain
 - [ukf-tractography](https://github.com/pnlbwh/ukftractography)
->- Languages: c, c++
+>- Languages: `C`, `C++`
 >- License: BSD
 >- Tags: visualisation, brain
->- Framework Which Uses An Unscented Kalman Filter For Performing Tractography
+>- A framework which uses an unscented kalman filter for performing tractography
 
 - [dwybss](https://github.com/mmromero/dwybss)
->- Languages: python
+>- Languages: `Python`
 >- License: LGPLv3
 >- Tags: segmentation, brain
->- Separate Microstructure Tissue Components From The Diffusion Mri Signal, Characterize The Volume Fractions, And T2 Maps Of These Compartments
+>- A separate microstructure tissue components from the diffusion mri signal, characterize the volume fractions, and t2 maps of these compartments
 
 - [freesurfer](https://github.com/freesurfer/freesurfer)
->- Languages: c++, c, python
+>- Languages: `C++`, `C`, `Python`
 >- License: GPLv3
 >- Tags: analysis, visualisation, brain
->- Analysis And Visualization Of Neuroimaging Data From Cross-Sectional And Longitudinal Studies
+>- A analysis and visualization of neuroimaging data from cross-sectional and longitudinal studies
 
 - [quicknat](https://github.com/ai-med/quickNAT_pytorch)
->- Languages: python
+>- Languages: `Python`
 >- License: MIT
 >- Tags: segmentation, brain
->- Fully Convolutional Network For Quick And Accurate Segmentation Of Neuroanatomy And Quality Control Of Structure-Wise Segmentations
+>- A fully convolutional network for quick and accurate segmentation of neuroanatomy and quality control of structure-wise segmentations
 
-### Ml
-### Qa
-- [mrqy](https://github.com/ccipd/MRQy)
->- Languages: javascript, python
+- [nipype](https://github.com/nipy/nipype)
+>- Languages: `Python`
+>- License: Apache
+>- Tags: analysis, brain
+>- A python project that provides a uniform interface to existing neuroimaging software and facilitates interaction between these packages within a single workflow
+
+- [nipy](https://github.com/nipy/nipy)
+>- Languages: `Python`, `C`
 >- License: BSD
->- Tags: qa, analysis
->- Generate Several Tags And Noise/Information Measurements For Quality Assessment
+>- Tags: analysis, brain
+>- A platform-independent python environment for the analysis of functional brain imaging data using an open development model
+
+- [nitime](https://github.com/nipy/nitime)
+>- Languages: `Python`
+>- License: BSD
+>- Tags: analysis, brain
+>- A contains a core of numerical algorithms for time-series analysis both in the time and spectral domains, a set of container objects to represent time-series, and auxiliary objects that expose a high level interface to the numerical machinery and make common analysis tasks easy to express with compact and semantically clear code
+
+- [popeye](https://github.com/kdesimone/popeye)
+>- Languages: `Python`
+>- License: MIT
+>- Tags: analysis, brain
+>- A python module for estimating population receptive fields from fmri data built on top of scipy
+
+- [nilean](https://github.com/nilearn/nilearn)
+>- Languages: `Python`
+>- License: BSD
+>- Tags: ml, analysis, brain
+>- A machine learning for neuroimaging in python
+
+- [pymvpa](https://github.com/PyMVPA/PyMVPA)
+>- Languages: `Python`
+>- License: MIT
+>- Tags: ml, analysis, brain
+>- A multivariate pattern analysis in python
+
+- [tractseg](https://github.com/MIC-DKFZ/TractSeg)
+>- Languages: `Python`
+>- License: Apache
+>- Tags: ml, segmentation, brain
+>- A automatic white matter bundle segmentation
+
+### Visualisation
+- [slicer](https://github.com/Slicer/Slicer)
+>- Languages: `Python`, `C++`
+>- License: BSD
+>- Tags: simulation, analysis, visualisation
+>- A open source software package for visualization and image analysis.
+
+- [qmritools](https://github.com/mfroeling/QMRITools)
+>- Languages: `Mathematica`
+>- License: BSD
+>- Tags: simulation, processing, visualisation
+>- A collection of tools and functions for processing quantitative mri data.
+
+- [ukf-tractography](https://github.com/pnlbwh/ukftractography)
+>- Languages: `C`, `C++`
+>- License: BSD
+>- Tags: visualisation, brain
+>- A framework which uses an unscented kalman filter for performing tractography
+
+- [freesurfer](https://github.com/freesurfer/freesurfer)
+>- Languages: `C++`, `C`, `Python`
+>- License: GPLv3
+>- Tags: analysis, visualisation, brain
+>- A analysis and visualization of neuroimaging data from cross-sectional and longitudinal studies
+
+- [gif_your_nifti](https://github.com/miykael/gif_your_nifti)
+>- Languages: `Python`
+>- License: BSD
+>- Tags: visualisation
+>- A create nice looking gifs from your nifti (.nii or .nii.gz) files with a simple command
+
+- [brainchop](https://github.com/neuroneural/brainchop)
+>- Languages: `Javascript`, `Python`
+>- License: MIT
+>- Tags: segmentation, visualisation
+>- A in-browser 3d mri rendering and segmentation
+
+- [mri-viewer](https://github.com/epam/mriviewer)
+>- Languages: `Javascript`
+>- License: Apache
+>- Tags: visualisation
+>- A high performance web tool for advanced visualization (both in 2d and 3d modes) medical volumetric data, provided in popular file formats: dicom, nifti, ktx, hdr
+
+### Data
+- [vespa](https://github.com/vespa-mrs/vespa/)
+>- Languages: `Python`
+>- License: BSD
+>- Tags: simulation, data, processing
+>- A integrated, open source, open development platform for magnetic resonance spectroscopy (mrs) research for rf pulse design, spectral simulation and prototyping, creating synthetic mrs data sets and interactive spectral data processing and analysis.
+
+- [ismrm-raw-data-format](https://ismrmrd.github.io/apidocs/1.5.0/)
+>- Languages: `C`, `C++`, `Python`
+>- License: MIT
+>- Tags: data
+>- A  common raw data format, which attempts to capture the data fields that are required to describe the magnetic resonance experiment with enough detail to reconstruct images
+
+- [fastmri](https://github.com/facebookresearch/fastMRI)
+>- Languages: `Python`
+>- License: MIT
+>- Tags: ML, analysis, data
+>- A research project from facebook ai research (fair) and nyu langone health to investigate the use of ai to make mri scans faster
+
+- [nlft](https://github.com/JuliaNeuroscience/NIfTI.jl)
+>- Languages: `Julia`
+>- License: MIT
+>- Tags: data
+>- A julia module for reading/writing nifti mri files
+
+- [openmorph](https://github.com/cMadan/openMorph)
+>- Languages: `Jupyter`
+>- License: None
+>- Tags: data
+>- A curated list of open-access databases with human structural mri data
+
+- [nibabel](https://github.com/nipy/nibabel)
+>- Languages: `Python`
+>- License: MIT
+>- Tags: data
+>- A read and write access to common neuroimaging file formats, including: analyze (plain, spm99, spm2 and later), gifti, nifti1, nifti2, cifti-2, minc1, minc2, afni brik/head, ecat and philips par/rec. in addition, nibabel also supports freesurfer's mgh, geometry, annotation and morphometry files, and provides some limited support for dicom
+
+### Fetal
+- [nesvor](https://github.com/daviddmc/NeSVoR)
+>- Languages: `Python`
+>- License: MIT
+>- Tags: reconstruction, fetal
+>- A gpu-accelerated slice-to-volume reconstruction (both rigid and deformable)
+
+- [affirm](https://github.com/allard-shi/affirm)
+>- Languages: `Python`
+>- License: MIT
+>- Tags: analysis, fetal
+>- A deep recursive fetal motion estimation and correction based on slice and volume affinity fusion
+
+- [niftymic](https://github.com/gift-surg/NiftyMIC)
+>- Languages: `Python`
+>- License: BSD
+>- Tags: reconstruction, fetal
+>- A toolkit for research developed within the gift-surg project to reconstruct an isotropic, high-resolution volume from multiple, possibly motion-corrupted, stacks of low-resolution 2d slices
+
+- [svrtk](https://github.com/SVRTK/SVRTK)
+>- Languages: `C++`
+>- License: Apache
+>- Tags: reconstruction, fetal
+>- A mirtk based svr reconstruction
+
+- [mialsuperresolutiontoolkit](https://github.com/Medical-Image-Analysis-Laboratory/mialsuperresolutiontoolkit)
+>- Languages: `C++`, `Python`
+>- License: BSD
+>- Tags: reconstruction, fetal
+>- A c++ and python tools necessary to perform motion-robust super-resolution fetal mri reconstruction
 
 - [fetal-iqa](https://github.com/daviddmc/fetal-IQA)
->- Languages: python
+>- Languages: `Python`
 >- License: MIT
 >- Tags: qa, fetal
->-  Image Quality Assessment (Iqa) Method For Fetal Mri
+>- A  image quality assessment (iqa) method for fetal mri
+
+### Qa
+- [mrqy](https://github.com/ccipd/MRQy)
+>- Languages: `Javascript`, `Python`
+>- License: BSD
+>- Tags: qa, analysis
+>- A generate several tags and noise/information measurements for quality assessment
+
+- [fetal-iqa](https://github.com/daviddmc/fetal-IQA)
+>- Languages: `Python`
+>- License: MIT
+>- Tags: qa, fetal
+>- A  image quality assessment (iqa) method for fetal mri
 
 - [mriqc](https://github.com/nipreps/mriqc)
->- Languages: javascript, python
+>- Languages: `Javascript`, `Python`
 >- License: Apache
 >- Tags: qa, analysis
->- Extracts No-Reference Iqms (Image Quality Metrics) From Structural (T1W And T2W) And Functional Mri (Magnetic Resonance Imaging) Data
+>- A extracts no-reference iqms (image quality metrics) from structural (t1w and t2w) and functional mri (magnetic resonance imaging) data
 
 ### Renal
 - [ukat](https://github.com/UKRIN-MAPS/ukat)
->- Languages: python
+>- Languages: `Python`
 >- License: GPLv3
 >- Tags: analysis, renal
->- Ukat Is A Vendor Agnostic Framework For The Analysis Of Quantitative Renal Mri Data
+>- A ukat is a vendor agnostic framework for the analysis of quantitative renal mri data
 
 ### Spinal
 - [spinal-chord-toolbox](https://github.com/spinalcordtoolbox/spinalcordtoolbox)
->- Languages: python
+>- Languages: `Python`
 >- License: LGPLv3
 >- Tags: segmentation, processing, spinal
->- Comprehensive, Free And Open-Source Set Of Command-Line Tools Dedicated To The Processing And Analysis Of Spinal Cord Mri Data
+>- A comprehensive, free and open-source set of command-line tools dedicated to the processing and analysis of spinal cord mri data
 
 ### Muscle
 - [myoqmri](https://github.com/fsantini/MyoQMRI)
->- Languages: python
+>- Languages: `Python`
 >- License: GPLv3
 >- Tags: analysis, muscle
->- Quantitative Mri Of The Muscles
+>- A quantitative mri of the muscles
 
 
 
 ## Languages
 ### Python
 - [pycoilgen](https://github.com/kev-m/pyCoilGen)
->- Languages: python
+>- Languages: `Python`
 >- License: GPLv3
 >- Tags: simulation
->- Open Source Tool For Generating Coil Winding Layouts, Such As Gradient Field Coils, Within The Mri And Nmr Environments.
+>- A open source tool for generating coil winding layouts, such as gradient field coils, within the mri and nmr environments.
 
 - [virtual-mri-scanner](https://github.com/imr-framework/virtual-scanner)
->- Languages: python
+>- Languages: `Python`
 >- License: AGPLv3
 >- Tags: simulation
->- End-To-End Hybrid Magnetic Resonance Imaging (Mri) Simulator/Console Designed To Be Zero-Footprint, Modular, And Supported By Open-Source Standards.
+>- A end-to-end hybrid magnetic resonance imaging (mri) simulator/console designed to be zero-footprint, modular, and supported by open-source standards.
 
 - [cosimpy](https://github.com/umbertozanovello/CoSimPy)
->- Languages: python
+>- Languages: `Python`
 >- License: MIT
 >- Tags: simulation
->- Open Source Python Library Aiming To Combine Results From Electromagnetic (Em) Simulation With Circuits Analysis Through A Cosimulation Environment.
+>- A open source python library aiming to combine results from electromagnetic (em) simulation with circuits analysis through a cosimulation environment.
 
 - [vespa](https://github.com/vespa-mrs/vespa/)
->- Languages: python
+>- Languages: `Python`
 >- License: BSD
 >- Tags: simulation, data, processing
->- Integrated, Open Source, Open Development Platform For Magnetic Resonance Spectroscopy (Mrs) Research For Rf Pulse Design, Spectral Simulation And Prototyping, Creating Synthetic Mrs Data Sets And Interactive Spectral Data Processing And Analysis.
+>- A integrated, open source, open development platform for magnetic resonance spectroscopy (mrs) research for rf pulse design, spectral simulation and prototyping, creating synthetic mrs data sets and interactive spectral data processing and analysis.
 
 - [scanhub](https://github.com/brain-link/scanhub)
->- Languages: python
+>- Languages: `Python`
 >- License: GPLv3
 >- Tags: simulation, reconstruction, processing
->- Multi Modal Acquisition Software, Which Allows Individualizable, Modular And Cloud-Based Processing Of Functional And Anatomical Medical Images.
+>- A multi modal acquisition software, which allows individualizable, modular and cloud-based processing of functional and anatomical medical images.
 
 - [slicer](https://github.com/Slicer/Slicer)
->- Languages: python, c++
+>- Languages: `Python`, `C++`
 >- License: BSD
 >- Tags: simulation, analysis, visualisation
->- Open Source Software Package For Visualization And Image Analysis.
+>- A open source software package for visualization and image analysis.
 
 - [eptlib](https://github.com/eptlib/eptlib)
->- Languages: c++, python
+>- Languages: `C++`, `Python`
 >- License: MIT
 >- Tags: reconstruction
->- Collection Of C++ Implementations Of Electric Properties Tomography (Ept) Methods.
+>- A collection of c++ implementations of electric properties tomography (ept) methods.
 
 - [sirf](https://github.com/SyneRBI/SIRF?tab=readme-ov-file)
->- Languages: c++, python
+>- Languages: `C++`, `Python`
 >- License: GPLv2
 >- Tags: reconstruction
->- Open Source Toolkit For The Reconstruction Of Pet And Mri Raw Data.
+>- A open source toolkit for the reconstruction of pet and mri raw data.
 
 - [dl-direct](https://github.com/SCAN-NRAD/DL-DiReCT)
->- Languages: python
+>- Languages: `Python`
 >- License: BSD
 >- Tags: segmentation
->- Combines A Deep Learning-Based Neuroanatomy Segmentation And Cortex Parcellation With A Diffeomorphic Registration Technique To Measure Cortical Thickness From T1W Mri
+>- A combines a deep learning-based neuroanatomy segmentation and cortex parcellation with a diffeomorphic registration technique to measure cortical thickness from t1w mri
 
 - [dafne](https://github.com/dafne-imaging/dafne)
->- Languages: python
+>- Languages: `Python`
 >- License: GPLv3
 >- Tags: segmentation
->- Program For The Segmentation Of Medical Images. It Relies On A Server To Provide Deep Learning Models To Aid The Segmentation, And Incremental Learning Is Used To Improve The Performance
+>- A program for the segmentation of medical images. it relies on a server to provide deep learning models to aid the segmentation, and incremental learning is used to improve the performance
 
 - [ukat](https://github.com/UKRIN-MAPS/ukat)
->- Languages: python
+>- Languages: `Python`
 >- License: GPLv3
 >- Tags: analysis, renal
->- Ukat Is A Vendor Agnostic Framework For The Analysis Of Quantitative Renal Mri Data
+>- A ukat is a vendor agnostic framework for the analysis of quantitative renal mri data
 
 - [pypulseq](https://github.com/imr-framework/pypulseq/)
->- Languages: python
+>- Languages: `Python`
 >- License: AGPLv3
 >- Tags: simulation
->- Enables Vendor-Neutral Pulse Sequence Design In Python [1,2]. The Pulse Sequences Can Be Exported As A .Seq File To Be Run On Siemens/Ge/Bruker Hardware By Leveraging Their Respective Pulseq Interpreters.
+>- A enables vendor-neutral pulse sequence design in python [1,2]. the pulse sequences can be exported as a .seq file to be run on siemens/ge/bruker hardware by leveraging their respective pulseq interpreters.
 
 - [spinal-chord-toolbox](https://github.com/spinalcordtoolbox/spinalcordtoolbox)
->- Languages: python
+>- Languages: `Python`
 >- License: LGPLv3
 >- Tags: segmentation, processing, spinal
->- Comprehensive, Free And Open-Source Set Of Command-Line Tools Dedicated To The Processing And Analysis Of Spinal Cord Mri Data
+>- A comprehensive, free and open-source set of command-line tools dedicated to the processing and analysis of spinal cord mri data
 
 - [dwybss](https://github.com/mmromero/dwybss)
->- Languages: python
+>- Languages: `Python`
 >- License: LGPLv3
 >- Tags: segmentation, brain
->- Separate Microstructure Tissue Components From The Diffusion Mri Signal, Characterize The Volume Fractions, And T2 Maps Of These Compartments
+>- A separate microstructure tissue components from the diffusion mri signal, characterize the volume fractions, and t2 maps of these compartments
 
 - [freesurfer](https://github.com/freesurfer/freesurfer)
->- Languages: c++, c, python
+>- Languages: `C++`, `C`, `Python`
 >- License: GPLv3
 >- Tags: analysis, visualisation, brain
->- Analysis And Visualization Of Neuroimaging Data From Cross-Sectional And Longitudinal Studies
+>- A analysis and visualization of neuroimaging data from cross-sectional and longitudinal studies
 
 - [simple-itk](https://github.com/SimpleITK/SimpleITK)
->- Languages: c++, python, R
+>- Languages: `C++`, `Python`, `R`
 >- License: Apache
 >- Tags: segmentation, analysis
->- Image Analysis Toolkit With A Large Number Of Components Supporting General Filtering Operations, Image Segmentation And Registration
+>- A image analysis toolkit with a large number of components supporting general filtering operations, image segmentation and registration
 
 - [ismrm-raw-data-format](https://ismrmrd.github.io/apidocs/1.5.0/)
->- Languages: c, c++, python
+>- Languages: `C`, `C++`, `Python`
 >- License: MIT
 >- Tags: data
->-  Common Raw Data Format, Which Attempts To Capture The Data Fields That Are Required To Describe The Magnetic Resonance Experiment With Enough Detail To Reconstruct Images
+>- A  common raw data format, which attempts to capture the data fields that are required to describe the magnetic resonance experiment with enough detail to reconstruct images
 
 - [tensorflow-mri](https://github.com/mrphys/tensorflow-mri)
->- Languages: python
+>- Languages: `Python`
 >- License: Apache
 >- Tags: reconstruction, ML
->- Library Of Tensorflow Operators For Computational Mri
+>- A library of tensorflow operators for computational mri
 
 - [quit](https://github.com/spinicist/QUIT)
->- Languages: c++, python
+>- Languages: `C++`, `Python`
 >- License: MPL
 >- Tags: analysis
->- Collection Of Programs For Processing Quantitative Mri Data
+>- A collection of programs for processing quantitative mri data
 
 - [gropt](https://github.com/mloecher/gropt)
->- Languages: c, python
+>- Languages: `C`, `Python`
 >- License: GPLv3
 >- Tags: simulation
->-  Toolbox For Mri Gradient Optimization
+>- A  toolbox for mri gradient optimization
 
 - [disimpy](https://github.com/kerkelae/disimpy)
->- Languages: python
+>- Languages: `Python`
 >- License: MIT
 >- Tags: simulation
->- Python Package For Generating Simulated Diffusion-Weighted Mr Signals That Can Be Useful In The Development And Validation Of Data Acquisition And Analysis Methods
+>- A python package for generating simulated diffusion-weighted mr signals that can be useful in the development and validation of data acquisition and analysis methods
 
 - [myoqmri](https://github.com/fsantini/MyoQMRI)
->- Languages: python
+>- Languages: `Python`
 >- License: GPLv3
 >- Tags: analysis, muscle
->- Quantitative Mri Of The Muscles
+>- A quantitative mri of the muscles
 
 - [mrqy](https://github.com/ccipd/MRQy)
->- Languages: javascript, python
+>- Languages: `Javascript`, `Python`
 >- License: BSD
 >- Tags: qa, analysis
->- Generate Several Tags And Noise/Information Measurements For Quality Assessment
+>- A generate several tags and noise/information measurements for quality assessment
 
 - [nlsam](https://github.com/samuelstjean/nlsam)
->- Languages: python
+>- Languages: `Python`
 >- License: GPLv3
 >- Tags: reconstruction
->- Implementation For The Non Local Spatial And Angular Matching (Nlsam) Denoising Algorithm For Diffusion Mri
+>- A implementation for the non local spatial and angular matching (nlsam) denoising algorithm for diffusion mri
 
 - [mrtrix3](https://github.com/MRtrix3/mrtrix3)
->- Languages: c++, python
+>- Languages: `C++`, `Python`
 >- License: MPL
 >- Tags: processing
->- Set Of Tools To Perform Various Types Of Diffusion Mri Analyses, From Various Forms Of Tractography Through To Next-Generation Group-Level Analyses
+>- A set of tools to perform various types of diffusion mri analyses, from various forms of tractography through to next-generation group-level analyses
 
 - [smriprep](https://github.com/nipreps/smriprep)
->- Languages: python
+>- Languages: `Python`
 >- License: Apache
 >- Tags: processing
->- Structural Magnetic Resonance Imaging (Smri) Data Preprocessing Pipeline That Is Designed To Provide An Easily Accessible, State-Of-The-Art Interface That Is Robust To Variations In Scan Acquisition Protocols And That Requires Minimal User Input, While Providing Easily Interpretable And Comprehensive Error And Output Reporting
+>- A structural magnetic resonance imaging (smri) data preprocessing pipeline that is designed to provide an easily accessible, state-of-the-art interface that is robust to variations in scan acquisition protocols and that requires minimal user input, while providing easily interpretable and comprehensive error and output reporting
 
 - [fastmri](https://github.com/facebookresearch/fastMRI)
->- Languages: python
+>- Languages: `Python`
 >- License: MIT
 >- Tags: ML, analysis, data
->- Research Project From Facebook Ai Research (Fair) And Nyu Langone Health To Investigate The Use Of Ai To Make Mri Scans Faster
+>- A research project from facebook ai research (fair) and nyu langone health to investigate the use of ai to make mri scans faster
 
 - [flow4d](https://github.com/saitta-s/flow4D)
->- Languages: python
+>- Languages: `Python`
 >- License: MIT
 >- Tags: processing
->- Work With 4D Flow Mri Acquisitions For Cfd Applications
+>- A work with 4d flow mri acquisitions for cfd applications
 
 - [nesvor](https://github.com/daviddmc/NeSVoR)
->- Languages: python
+>- Languages: `Python`
 >- License: MIT
 >- Tags: reconstruction, fetal
->- Gpu-Accelerated Slice-To-Volume Reconstruction (Both Rigid And Deformable)
+>- A gpu-accelerated slice-to-volume reconstruction (both rigid and deformable)
 
 - [affirm](https://github.com/allard-shi/affirm)
->- Languages: python
+>- Languages: `Python`
 >- License: MIT
 >- Tags: analysis, fetal
->- Deep Recursive Fetal Motion Estimation And Correction Based On Slice And Volume Affinity Fusion
+>- A deep recursive fetal motion estimation and correction based on slice and volume affinity fusion
 
 - [niftymic](https://github.com/gift-surg/NiftyMIC)
->- Languages: python
+>- Languages: `Python`
 >- License: BSD
 >- Tags: reconstruction, fetal
->- Toolkit For Research Developed Within The Gift-Surg Project To Reconstruct An Isotropic, High-Resolution Volume From Multiple, Possibly Motion-Corrupted, Stacks Of Low-Resolution 2D Slices
+>- A toolkit for research developed within the gift-surg project to reconstruct an isotropic, high-resolution volume from multiple, possibly motion-corrupted, stacks of low-resolution 2d slices
 
 - [mialsuperresolutiontoolkit](https://github.com/Medical-Image-Analysis-Laboratory/mialsuperresolutiontoolkit)
->- Languages: c++, python
+>- Languages: `C++`, `Python`
 >- License: BSD
 >- Tags: reconstruction, fetal
->- C++ And Python Tools Necessary To Perform Motion-Robust Super-Resolution Fetal Mri Reconstruction
+>- A c++ and python tools necessary to perform motion-robust super-resolution fetal mri reconstruction
 
 - [fetal-iqa](https://github.com/daviddmc/fetal-IQA)
->- Languages: python
+>- Languages: `Python`
 >- License: MIT
 >- Tags: qa, fetal
->-  Image Quality Assessment (Iqa) Method For Fetal Mri
+>- A  image quality assessment (iqa) method for fetal mri
 
 - [quicknat](https://github.com/ai-med/quickNAT_pytorch)
->- Languages: python
+>- Languages: `Python`
 >- License: MIT
 >- Tags: segmentation, brain
->- Fully Convolutional Network For Quick And Accurate Segmentation Of Neuroanatomy And Quality Control Of Structure-Wise Segmentations
+>- A fully convolutional network for quick and accurate segmentation of neuroanatomy and quality control of structure-wise segmentations
 
 - [pydeface](https://github.com/poldracklab/pydeface)
->- Languages: python
+>- Languages: `Python`
 >- License: MIT
 >- Tags: processing
->- A Tool To Remove Facial Structure From Mri Images.
+>- A a tool to remove facial structure from mri images.
 
 - [mritopng](https://github.com/danishm/mritopng)
->- Languages: python
+>- Languages: `Python`
 >- License: MIT
 >- Tags: processing
->- A Simple Python Module To Make It Easy To Batch Convert Dicom Files To Png Images.
+>- A a simple python module to make it easy to batch convert dicom files to png images.
 
 - [qslprep](https://github.com/PennLINC/qsiprep)
->- Languages: python
+>- Languages: `Python`
 >- License: BSD
 >- Tags: processing, reconstruction, analysis
->- Preprocessing And Reconstruction Of Diffusion Mri
+>- A preprocessing and reconstruction of diffusion mri
 
 - [gif_your_nifti](https://github.com/miykael/gif_your_nifti)
->- Languages: python
+>- Languages: `Python`
 >- License: BSD
 >- Tags: visualisation
->- Create Nice Looking Gifs From Your Nifti (.Nii Or .Nii.Gz) Files With A Simple Command
+>- A create nice looking gifs from your nifti (.nii or .nii.gz) files with a simple command
 
 - [direct](https://github.com/NKI-AI/direct)
->- Languages: python
+>- Languages: `Python`
 >- License: Apache
 >- Tags: reconstruction
->- Deep Learning Framework For Mri Reconstruction
+>- A deep learning framework for mri reconstruction
 
 - [brainchop](https://github.com/neuroneural/brainchop)
->- Languages: javascript, python
+>- Languages: `Javascript`, `Python`
 >- License: MIT
 >- Tags: segmentation, visualisation
->- In-Browser 3D Mri Rendering And Segmentation
+>- A in-browser 3d mri rendering and segmentation
 
 - [mriqc](https://github.com/nipreps/mriqc)
->- Languages: javascript, python
+>- Languages: `Javascript`, `Python`
 >- License: Apache
 >- Tags: qa, analysis
->- Extracts No-Reference Iqms (Image Quality Metrics) From Structural (T1W And T2W) And Functional Mri (Magnetic Resonance Imaging) Data
+>- A extracts no-reference iqms (image quality metrics) from structural (t1w and t2w) and functional mri (magnetic resonance imaging) data
 
 - [synthseg](https://github.com/BBillot/SynthSeg)
->- Languages: python
+>- Languages: `Python`
 >- License: Apache
 >- Tags: ML, reconstruction
->- Deep Learning Tool For Segmentation Of Brain Scans Of Any Contrast And Resolution
+>- A deep learning tool for segmentation of brain scans of any contrast and resolution
 
 - [intensity-normalization](https://github.com/jcreinhold/intensity-normalization)
->- Languages: python
+>- Languages: `Python`
 >- License: Apache
 >- Tags: processing
->- Various Methods To Normalize The Intensity Of Various Modalities Of Magnetic Resonance (Mr) Images, E.G., T1-Weighted (T1-W), T2-Weighted (T2-W), Fluid-Attenuated Inversion Recovery (Flair), And Proton Density-Weighted (Pd-W)
+>- A various methods to normalize the intensity of various modalities of magnetic resonance (mr) images, e.g., t1-weighted (t1-w), t2-weighted (t2-w), fluid-attenuated inversion recovery (flair), and proton density-weighted (pd-w)
+
+- [monai](https://github.com/Project-MONAI/MONAI)
+>- Languages: `Python`
+>- License: Apache
+>- Tags: ml, processing, segmentation
+>- A ai toolkit for healthcare imaging
+
+- [medical-detection-toolkit](https://github.com/MIC-DKFZ/medicaldetectiontoolkit)
+>- Languages: `Python`
+>- License: Apache
+>- Tags: ml, segmentation
+>- A contains 2d + 3d implementations of prevalent object detectors such as mask r-cnn, retina net, retina u-net, as well as a training and inference framework focused on dealing with medical images
+
+- [torchio](https://github.com/fepegar/torchio)
+>- Languages: `Python`
+>- License: Apache
+>- Tags: ml, processing
+>- A medical imaging toolkit for deep learning
+
+- [deepmedic](https://github.com/deepmedic/deepmedic)
+>- Languages: `Python`
+>- License: BSD
+>- Tags: ml, segmentation
+>- A efficient multi-scale 3d convolutional neural network for segmentation of 3d medical scans
+
+- [medical-torch](https://github.com/perone/medicaltorch?tab=readme-ov-file)
+>- Languages: `Python`
+>- License: Apache
+>- Tags: ml, processing
+>- A open-source framework for pytorch, implementing an extensive set of loaders, pre-processors and datasets for medical imaging
+
+- [medical-zoo](https://github.com/black0017/MedicalZooPytorch)
+>- Languages: `Python`
+>- License: MIT
+>- Tags: ml, segmentation
+>- A pytorch-based deep learning framework for multi-modal 2d/3d medical image segmentation
+
+- [nipype](https://github.com/nipy/nipype)
+>- Languages: `Python`
+>- License: Apache
+>- Tags: analysis, brain
+>- A python project that provides a uniform interface to existing neuroimaging software and facilitates interaction between these packages within a single workflow
+
+- [nibabel](https://github.com/nipy/nibabel)
+>- Languages: `Python`
+>- License: MIT
+>- Tags: data
+>- A read and write access to common neuroimaging file formats, including: analyze (plain, spm99, spm2 and later), gifti, nifti1, nifti2, cifti-2, minc1, minc2, afni brik/head, ecat and philips par/rec. in addition, nibabel also supports freesurfer's mgh, geometry, annotation and morphometry files, and provides some limited support for dicom
+
+- [nipy](https://github.com/nipy/nipy)
+>- Languages: `Python`, `C`
+>- License: BSD
+>- Tags: analysis, brain
+>- A platform-independent python environment for the analysis of functional brain imaging data using an open development model
+
+- [nitime](https://github.com/nipy/nitime)
+>- Languages: `Python`
+>- License: BSD
+>- Tags: analysis, brain
+>- A contains a core of numerical algorithms for time-series analysis both in the time and spectral domains, a set of container objects to represent time-series, and auxiliary objects that expose a high level interface to the numerical machinery and make common analysis tasks easy to express with compact and semantically clear code
+
+- [popeye](https://github.com/kdesimone/popeye)
+>- Languages: `Python`
+>- License: MIT
+>- Tags: analysis, brain
+>- A python module for estimating population receptive fields from fmri data built on top of scipy
+
+- [nilean](https://github.com/nilearn/nilearn)
+>- Languages: `Python`
+>- License: BSD
+>- Tags: ml, analysis, brain
+>- A machine learning for neuroimaging in python
+
+- [pymvpa](https://github.com/PyMVPA/PyMVPA)
+>- Languages: `Python`
+>- License: MIT
+>- Tags: ml, analysis, brain
+>- A multivariate pattern analysis in python
+
+- [tractseg](https://github.com/MIC-DKFZ/TractSeg)
+>- Languages: `Python`
+>- License: Apache
+>- Tags: ml, segmentation, brain
+>- A automatic white matter bundle segmentation
+
+- [clinicaldl](https://github.com/aramis-lab/clinicadl)
+>- Languages: `Python`
+>- License: MIT
+>- Tags: ml, processing
+>- A framework for the reproducible processing of neuroimaging data with deep learning methods
+
+- [brats-toolkit](https://github.com/neuronflow/BraTS-Toolkit)
+>- Languages: `Python`
+>- License: AGPLv3
+>- Tags: ml, segmentation, processing
+>- A code to preprocess, segment, and fuse glioma mri scans based on the brats toolkit manuscript
 
 ### C++
 - [slicer](https://github.com/Slicer/Slicer)
->- Languages: python, c++
+>- Languages: `Python`, `C++`
 >- License: BSD
 >- Tags: simulation, analysis, visualisation
->- Open Source Software Package For Visualization And Image Analysis.
+>- A open source software package for visualization and image analysis.
 
 - [eptlib](https://github.com/eptlib/eptlib)
->- Languages: c++, python
+>- Languages: `C++`, `Python`
 >- License: MIT
 >- Tags: reconstruction
->- Collection Of C++ Implementations Of Electric Properties Tomography (Ept) Methods.
+>- A collection of c++ implementations of electric properties tomography (ept) methods.
 
 - [sirf](https://github.com/SyneRBI/SIRF?tab=readme-ov-file)
->- Languages: c++, python
+>- Languages: `C++`, `Python`
 >- License: GPLv2
 >- Tags: reconstruction
->- Open Source Toolkit For The Reconstruction Of Pet And Mri Raw Data.
+>- A open source toolkit for the reconstruction of pet and mri raw data.
 
 - [hdr-mri](https://github.com/shakes76/sHDR)
->- Languages: c++
+>- Languages: `C++`
 >- License: Apache
 >- Tags: reconstruction
->- Takes As Input Coregistered Mr Images (Preferrably Of Different Contrasts), Non-Linearly Combines Them And Outputs A Single Hdr Mr Image.
+>- A takes as input coregistered mr images (preferrably of different contrasts), non-linearly combines them and outputs a single hdr mr image.
 
 - [gadgetron](https://github.com/gadgetron/gadgetron)
->- Languages: c++
+>- Languages: `C++`
 >- License: MIT
 >- Tags: reconstruction
->- Open Source Project For Medical Image Reconstruction
+>- A open source project for medical image reconstruction
 
 - [powergrid](https://github.com/mrfil/PowerGrid)
->- Languages: c++
+>- Languages: `C++`
 >- License: MIT
 >- Tags: reconstruction
->- Cpu And Gpu Accelerated Iterative Magnetic Resonance Imaging Reconstruction
+>- A cpu and gpu accelerated iterative magnetic resonance imaging reconstruction
 
 - [ukf-tractography](https://github.com/pnlbwh/ukftractography)
->- Languages: c, c++
+>- Languages: `C`, `C++`
 >- License: BSD
 >- Tags: visualisation, brain
->- Framework Which Uses An Unscented Kalman Filter For Performing Tractography
+>- A framework which uses an unscented kalman filter for performing tractography
 
 - [freesurfer](https://github.com/freesurfer/freesurfer)
->- Languages: c++, c, python
+>- Languages: `C++`, `C`, `Python`
 >- License: GPLv3
 >- Tags: analysis, visualisation, brain
->- Analysis And Visualization Of Neuroimaging Data From Cross-Sectional And Longitudinal Studies
+>- A analysis and visualization of neuroimaging data from cross-sectional and longitudinal studies
 
 - [simple-itk](https://github.com/SimpleITK/SimpleITK)
->- Languages: c++, python, R
+>- Languages: `C++`, `Python`, `R`
 >- License: Apache
 >- Tags: segmentation, analysis
->- Image Analysis Toolkit With A Large Number Of Components Supporting General Filtering Operations, Image Segmentation And Registration
+>- A image analysis toolkit with a large number of components supporting general filtering operations, image segmentation and registration
 
 - [ismrm-raw-data-format](https://ismrmrd.github.io/apidocs/1.5.0/)
->- Languages: c, c++, python
+>- Languages: `C`, `C++`, `Python`
 >- License: MIT
 >- Tags: data
->-  Common Raw Data Format, Which Attempts To Capture The Data Fields That Are Required To Describe The Magnetic Resonance Experiment With Enough Detail To Reconstruct Images
+>- A  common raw data format, which attempts to capture the data fields that are required to describe the magnetic resonance experiment with enough detail to reconstruct images
 
 - [quit](https://github.com/spinicist/QUIT)
->- Languages: c++, python
+>- Languages: `C++`, `Python`
 >- License: MPL
 >- Tags: analysis
->- Collection Of Programs For Processing Quantitative Mri Data
+>- A collection of programs for processing quantitative mri data
 
 - [madym](https://gitlab.com/manchester_qbi/manchester_qbi_public/madym_cxx)
->- Languages: c++
+>- Languages: `C++`
 >- License: Apache
 >- Tags: analysis, processing
->- C++ Toolkit For Quantative Dce-Mri And Dwi-Mri Analysis
+>- A c++ toolkit for quantative dce-mri and dwi-mri analysis
 
 - [bart](http://mrirecon.github.io/bart/)
->- Languages: c, c++
+>- Languages: `C`, `C++`
 >- License: BSD
 >- Tags: reconstruction
->- Free And Open-Source Image-Reconstruction Framework For Computational Magnetic Resonance Imaging
+>- A free and open-source image-reconstruction framework for computational magnetic resonance imaging
 
 - [mrtrix3](https://github.com/MRtrix3/mrtrix3)
->- Languages: c++, python
+>- Languages: `C++`, `Python`
 >- License: MPL
 >- Tags: processing
->- Set Of Tools To Perform Various Types Of Diffusion Mri Analyses, From Various Forms Of Tractography Through To Next-Generation Group-Level Analyses
+>- A set of tools to perform various types of diffusion mri analyses, from various forms of tractography through to next-generation group-level analyses
 
 - [svrtk](https://github.com/SVRTK/SVRTK)
->- Languages: c++
+>- Languages: `C++`
 >- License: Apache
 >- Tags: reconstruction, fetal
->- Mirtk Based Svr Reconstruction
+>- A mirtk based svr reconstruction
 
 - [mialsuperresolutiontoolkit](https://github.com/Medical-Image-Analysis-Laboratory/mialsuperresolutiontoolkit)
->- Languages: c++, python
+>- Languages: `C++`, `Python`
 >- License: BSD
 >- Tags: reconstruction, fetal
->- C++ And Python Tools Necessary To Perform Motion-Robust Super-Resolution Fetal Mri Reconstruction
+>- A c++ and python tools necessary to perform motion-robust super-resolution fetal mri reconstruction
 
 ### Julia
 - [koma](https://github.com/JuliaHealth/KomaMRI.jl)
->- Languages: julia
+>- Languages: `Julia`
 >- License: MIT
 >- Tags: simulation
->- Pulseq-Compatible Framework To Efficiently Simulate Magnetic Resonance Imaging (Mri) Acquisitions
+>- A pulseq-compatible framework to efficiently simulate magnetic resonance imaging (mri) acquisitions
 
 - [mri-generalized-bloch](https://github.com/JakobAsslaender/MRIgeneralizedBloch.jl)
->- Languages: julia
+>- Languages: `Julia`
 >- License: MIT
 >- Tags: simulation
->- Julia Package That Implements The Generalized Bloch Equations For Modeling The Dynamics Of The Semi-Solid Spin Pool In Magnetic Resonance Imaging (Mri), And Its Exchange With The Free Spin Pool
+>- A julia package that implements the generalized bloch equations for modeling the dynamics of the semi-solid spin pool in magnetic resonance imaging (mri), and its exchange with the free spin pool
 
 - [decaes](https://github.com/jondeuce/DECAES.jl)
->- Languages: julia
+>- Languages: `Julia`
 >- License: MIT
 >- Tags: processing
->- Julia Implementation Of The Matlab Toolbox From The Ubc Mri Research Centre For Computing Voxelwise T2-Distributions From Multi Spin-Echo Mri Images Using The Extended Phase Graph Algorithm With Stimulated Echo Corrections
+>- A julia implementation of the matlab toolbox from the ubc mri research centre for computing voxelwise t2-distributions from multi spin-echo mri images using the extended phase graph algorithm with stimulated echo corrections
 
 - [mri-reco](https://github.com/MagneticResonanceImaging/MRIReco.jl)
->- Languages: julia
+>- Languages: `Julia`
 >- License: MIT
 >- Tags: reconstruction
->- Julia Package For Magnetic Resonance Imaging
+>- A julia package for magnetic resonance imaging
 
 - [mri-research-tools](https://github.com/korbinian90/MriResearchTools.jl)
->- Languages: julia
+>- Languages: `Julia`
 >- License: MIT
 >- Tags: processing, analysis, simulation
->- Specialized Tools For Mri
+>- A specialized tools for mri
 
 - [nlft](https://github.com/JuliaNeuroscience/NIfTI.jl)
->- Languages: julia
+>- Languages: `Julia`
 >- License: MIT
 >- Tags: data
->- Julia Module For Reading/Writing Nifti Mri Files
+>- A julia module for reading/writing nifti mri files
 
 - [dcemri](https://github.com/davidssmith/DCEMRI.jl)
->- Languages: julia
+>- Languages: `Julia`
 >- License: MIT
 >- Tags: analysis
->- Open Source Toolkit For Dynamic Contrast Enhanced Mri Analysis
+>- A open source toolkit for dynamic contrast enhanced mri analysis
 
 ### C
 - [ukf-tractography](https://github.com/pnlbwh/ukftractography)
->- Languages: c, c++
+>- Languages: `C`, `C++`
 >- License: BSD
 >- Tags: visualisation, brain
->- Framework Which Uses An Unscented Kalman Filter For Performing Tractography
+>- A framework which uses an unscented kalman filter for performing tractography
 
 - [freesurfer](https://github.com/freesurfer/freesurfer)
->- Languages: c++, c, python
+>- Languages: `C++`, `C`, `Python`
 >- License: GPLv3
 >- Tags: analysis, visualisation, brain
->- Analysis And Visualization Of Neuroimaging Data From Cross-Sectional And Longitudinal Studies
+>- A analysis and visualization of neuroimaging data from cross-sectional and longitudinal studies
 
 - [ismrm-raw-data-format](https://ismrmrd.github.io/apidocs/1.5.0/)
->- Languages: c, c++, python
+>- Languages: `C`, `C++`, `Python`
 >- License: MIT
 >- Tags: data
->-  Common Raw Data Format, Which Attempts To Capture The Data Fields That Are Required To Describe The Magnetic Resonance Experiment With Enough Detail To Reconstruct Images
+>- A  common raw data format, which attempts to capture the data fields that are required to describe the magnetic resonance experiment with enough detail to reconstruct images
 
 - [gropt](https://github.com/mloecher/gropt)
->- Languages: c, python
+>- Languages: `C`, `Python`
 >- License: GPLv3
 >- Tags: simulation
->-  Toolbox For Mri Gradient Optimization
+>- A  toolbox for mri gradient optimization
 
 - [bart](http://mrirecon.github.io/bart/)
->- Languages: c, c++
+>- Languages: `C`, `C++`
 >- License: BSD
 >- Tags: reconstruction
->- Free And Open-Source Image-Reconstruction Framework For Computational Magnetic Resonance Imaging
+>- A free and open-source image-reconstruction framework for computational magnetic resonance imaging
+
+- [nipy](https://github.com/nipy/nipy)
+>- Languages: `Python`, `C`
+>- License: BSD
+>- Tags: analysis, brain
+>- A platform-independent python environment for the analysis of functional brain imaging data using an open development model
 
 ### Javascript
 - [mrqy](https://github.com/ccipd/MRQy)
->- Languages: javascript, python
+>- Languages: `Javascript`, `Python`
 >- License: BSD
 >- Tags: qa, analysis
->- Generate Several Tags And Noise/Information Measurements For Quality Assessment
+>- A generate several tags and noise/information measurements for quality assessment
 
 - [brainchop](https://github.com/neuroneural/brainchop)
->- Languages: javascript, python
+>- Languages: `Javascript`, `Python`
 >- License: MIT
 >- Tags: segmentation, visualisation
->- In-Browser 3D Mri Rendering And Segmentation
+>- A in-browser 3d mri rendering and segmentation
 
 - [mriqc](https://github.com/nipreps/mriqc)
->- Languages: javascript, python
+>- Languages: `Javascript`, `Python`
 >- License: Apache
 >- Tags: qa, analysis
->- Extracts No-Reference Iqms (Image Quality Metrics) From Structural (T1W And T2W) And Functional Mri (Magnetic Resonance Imaging) Data
+>- A extracts no-reference iqms (image quality metrics) from structural (t1w and t2w) and functional mri (magnetic resonance imaging) data
 
 - [mri-viewer](https://github.com/epam/mriviewer)
->- Languages: javascript
+>- Languages: `Javascript`
 >- License: Apache
 >- Tags: visualisation
->- High Performance Web Tool For Advanced Visualization (Both In 2D And 3D Modes) Medical Volumetric Data, Provided In Popular File Formats: Dicom, Nifti, Ktx, Hdr
+>- A high performance web tool for advanced visualization (both in 2d and 3d modes) medical volumetric data, provided in popular file formats: dicom, nifti, ktx, hdr
 
 ### R
 - [braingraph](https://github.com/cwatson/brainGraph)
->- Languages: r
+>- Languages: `R`
 >- License: None
 >- Tags: analysis
->- R Package For Performing Graph Theory Analyses Of Brain Mri Data
+>- A r package for performing graph theory analyses of brain mri data
 
 ### Mathematica
 - [qmritools](https://github.com/mfroeling/QMRITools)
->- Languages: mathematica
+>- Languages: `Mathematica`
 >- License: BSD
 >- Tags: simulation, processing, visualisation
->- Collection Of Tools And Functions For Processing Quantitative Mri Data.
+>- A collection of tools and functions for processing quantitative mri data.
 
 ### Jupyter
 - [openmorph](https://github.com/cMadan/openMorph)
->- Languages: jupyter
+>- Languages: `Jupyter`
 >- License: None
 >- Tags: data
->- Curated List Of Open-Access Databases With Human Structural Mri Data
+>- A curated list of open-access databases with human structural mri data
 

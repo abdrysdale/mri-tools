@@ -116,11 +116,12 @@ def make(repos: list[dict], out: str = "README.md") -> bool:
 
     def _get_repo_str(repo, k):
         _out = (
-            f"- [{k}]({repo["link"]})\n"        # Repo name + link
-            f">- Languages: {", ".join(repo["languages"])}\n" # Languages
-            f">- License: {repo["license"]}\n"     # License
-            f">- Tags: {", ".join(repo["tags"])}\n"           # Tags
-            f">- {repo["description"].title()}\n\n"  # Description
+            f"- [{k}]({repo["link"]})\n"                        # Repo name + link
+            ">- Languages: "                                    # Languages
+            f"{", ".join(["`"+l.title()+"`" for l in repo["languages"]])}\n"
+            f">- License: {repo["license"]}\n"                  # License
+            f">- Tags: {", ".join(repo["tags"])}\n"             # Tags
+            f">- A {repo["description"].lower()}\n\n"           # Description
         )
         return _out
 
