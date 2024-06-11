@@ -529,3 +529,31 @@ link = "https://github.com/neuronflow/BraTS-Toolkit"
 license = "AGPLv3"
 description = "Code to preprocess, segment, and fuse glioma MRI scans based on the BraTS Toolkit manuscript"
 tags = ["ml", "segmentation", "processing"]
+
+[mrqa]
+languages = ["python"]
+link = "https://github.com/Open-Minds-Lab/mrQA"
+license = "Apache"
+description = "mrQA: tools for quality assurance in medical imaging datasets, including protocol compliance"
+tags = ["qa"]
+
+[hazen]
+languages = ["python"]
+link = "https://github.com/GSTT-CSC/hazen"
+license = "Apache"
+description = "Quality assurance framework for Magnetic Resonance Imaging"
+tags = ["qa"]
+
+[mrdqed]
+languages = ["python"]
+link = "https://github.com/EGates1/MRDQED"
+license = "None"
+description = "Magnetic Resonance Data Quality Evaluation Dashboard"
+tags = ["qa", "data"]
+
+[mrisafety]
+languages = ["julia"]
+link = "https://github.com/felixhorger/MRISafety.jl"
+license = "None"
+description = "MRI safety checks"
+tags = ["safety", "simulation"]

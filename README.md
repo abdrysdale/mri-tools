@@ -23,16 +23,17 @@ tags = ["repo-tag-1", "repo-tag-2"]
 	- [processing](#processing)
 	- [reconstruction](#reconstruction)
 	- [ml](#ml)
-	- [segmentation](#segmentation)
 	- [simulation](#simulation)
+	- [segmentation](#segmentation)
 	- [brain](#brain)
 	- [data](#data)
 	- [visualisation](#visualisation)
-	- [fetal](#fetal)
 	- [qa](#qa)
+	- [fetal](#fetal)
 	- [renal](#renal)
 	- [spinal](#spinal)
 	- [muscle](#muscle)
+	- [safety](#safety)
 - [languages](#languages)
 	- [python](#python)
 	- [c++](#c++)
@@ -43,14 +44,14 @@ tags = ["repo-tag-1", "repo-tag-2"]
 	- [jupyter](#jupyter)
 
 ## Stats
-- Total repos: 76
+- Total repos: 80
 - Languages:
 
 | Language | Count |
 |---|---|
-| python | 59 |
+| python | 62 |
 | c++ | 16 |
-| julia | 7 |
+| julia | 8 |
 | c | 6 |
 | javascript | 4 |
 | r | 2 |
@@ -64,29 +65,30 @@ tags = ["repo-tag-1", "repo-tag-2"]
 | processing | 18 |
 | reconstruction | 17 |
 | ml | 14 |
+| simulation | 13 |
 | segmentation | 13 |
-| simulation | 12 |
 | brain | 11 |
-| data | 6 |
+| data | 7 |
 | visualisation | 6 |
+| qa | 6 |
 | fetal | 6 |
-| qa | 3 |
 | renal | 1 |
 | spinal | 1 |
 | muscle | 1 |
+| safety | 1 |
 
 - Licenses:
 
 | Licence | Count |
 |---|---|
 | mit | 27 |
-| apache | 17 |
+| apache | 19 |
 | bsd | 14 |
 | gplv3 | 8 |
+| none | 4 |
 | agplv3 | 3 |
 | lgplv3 | 2 |
 | mpl | 2 |
-| none | 2 |
 | gplv2 | 1 |
 
 
@@ -516,6 +518,85 @@ tags = ["repo-tag-1", "repo-tag-2"]
 >- Tags: ml, segmentation, processing
 >- A code to preprocess, segment, and fuse glioma mri scans based on the brats toolkit manuscript
 
+### Simulation <a name="simulation"></a>
+- [pycoilgen](https://github.com/kev-m/pyCoilGen)
+>- Languages: `Python`
+>- License: GPLv3
+>- Tags: simulation
+>- A open source tool for generating coil winding layouts, such as gradient field coils, within the mri and nmr environments.
+
+- [virtual-mri-scanner](https://github.com/imr-framework/virtual-scanner)
+>- Languages: `Python`
+>- License: AGPLv3
+>- Tags: simulation
+>- A end-to-end hybrid magnetic resonance imaging (mri) simulator/console designed to be zero-footprint, modular, and supported by open-source standards.
+
+- [cosimpy](https://github.com/umbertozanovello/CoSimPy)
+>- Languages: `Python`
+>- License: MIT
+>- Tags: simulation
+>- A open source python library aiming to combine results from electromagnetic (em) simulation with circuits analysis through a cosimulation environment.
+
+- [vespa](https://github.com/vespa-mrs/vespa/)
+>- Languages: `Python`
+>- License: BSD
+>- Tags: simulation, data, processing
+>- A integrated, open source, open development platform for magnetic resonance spectroscopy (mrs) research for rf pulse design, spectral simulation and prototyping, creating synthetic mrs data sets and interactive spectral data processing and analysis.
+
+- [scanhub](https://github.com/brain-link/scanhub)
+>- Languages: `Python`
+>- License: GPLv3
+>- Tags: simulation, reconstruction, processing
+>- A multi modal acquisition software, which allows individualizable, modular and cloud-based processing of functional and anatomical medical images.
+
+- [slicer](https://github.com/Slicer/Slicer)
+>- Languages: `Python`, `C++`
+>- License: BSD
+>- Tags: simulation, analysis, visualisation
+>- A open source software package for visualization and image analysis.
+
+- [pypulseq](https://github.com/imr-framework/pypulseq/)
+>- Languages: `Python`
+>- License: AGPLv3
+>- Tags: simulation
+>- A enables vendor-neutral pulse sequence design in python [1,2]. the pulse sequences can be exported as a .seq file to be run on siemens/ge/bruker hardware by leveraging their respective pulseq interpreters.
+
+- [koma](https://github.com/JuliaHealth/KomaMRI.jl)
+>- Languages: `Julia`
+>- License: MIT
+>- Tags: simulation
+>- A pulseq-compatible framework to efficiently simulate magnetic resonance imaging (mri) acquisitions
+
+- [gropt](https://github.com/mloecher/gropt)
+>- Languages: `C`, `Python`
+>- License: GPLv3
+>- Tags: simulation
+>- A  toolbox for mri gradient optimization
+
+- [disimpy](https://github.com/kerkelae/disimpy)
+>- Languages: `Python`
+>- License: MIT
+>- Tags: simulation
+>- A python package for generating simulated diffusion-weighted mr signals that can be useful in the development and validation of data acquisition and analysis methods
+
+- [mri-generalized-bloch](https://github.com/JakobAsslaender/MRIgeneralizedBloch.jl)
+>- Languages: `Julia`
+>- License: MIT
+>- Tags: simulation
+>- A julia package that implements the generalized bloch equations for modeling the dynamics of the semi-solid spin pool in magnetic resonance imaging (mri), and its exchange with the free spin pool
+
+- [mri-research-tools](https://github.com/korbinian90/MriResearchTools.jl)
+>- Languages: `Julia`
+>- License: MIT
+>- Tags: processing, analysis, simulation
+>- A specialized tools for mri
+
+- [mrisafety](https://github.com/felixhorger/MRISafety.jl)
+>- Languages: `Julia`
+>- License: None
+>- Tags: safety, simulation
+>- A mri safety checks
+
 ### Segmentation <a name="segmentation"></a>
 - [dl-direct](https://github.com/SCAN-NRAD/DL-DiReCT)
 >- Languages: `Python`
@@ -594,79 +675,6 @@ tags = ["repo-tag-1", "repo-tag-2"]
 >- License: AGPLv3
 >- Tags: ml, segmentation, processing
 >- A code to preprocess, segment, and fuse glioma mri scans based on the brats toolkit manuscript
-
-### Simulation <a name="simulation"></a>
-- [pycoilgen](https://github.com/kev-m/pyCoilGen)
->- Languages: `Python`
->- License: GPLv3
->- Tags: simulation
->- A open source tool for generating coil winding layouts, such as gradient field coils, within the mri and nmr environments.
-
-- [virtual-mri-scanner](https://github.com/imr-framework/virtual-scanner)
->- Languages: `Python`
->- License: AGPLv3
->- Tags: simulation
->- A end-to-end hybrid magnetic resonance imaging (mri) simulator/console designed to be zero-footprint, modular, and supported by open-source standards.
-
-- [cosimpy](https://github.com/umbertozanovello/CoSimPy)
->- Languages: `Python`
->- License: MIT
->- Tags: simulation
->- A open source python library aiming to combine results from electromagnetic (em) simulation with circuits analysis through a cosimulation environment.
-
-- [vespa](https://github.com/vespa-mrs/vespa/)
->- Languages: `Python`
->- License: BSD
->- Tags: simulation, data, processing
->- A integrated, open source, open development platform for magnetic resonance spectroscopy (mrs) research for rf pulse design, spectral simulation and prototyping, creating synthetic mrs data sets and interactive spectral data processing and analysis.
-
-- [scanhub](https://github.com/brain-link/scanhub)
->- Languages: `Python`
->- License: GPLv3
->- Tags: simulation, reconstruction, processing
->- A multi modal acquisition software, which allows individualizable, modular and cloud-based processing of functional and anatomical medical images.
-
-- [slicer](https://github.com/Slicer/Slicer)
->- Languages: `Python`, `C++`
->- License: BSD
->- Tags: simulation, analysis, visualisation
->- A open source software package for visualization and image analysis.
-
-- [pypulseq](https://github.com/imr-framework/pypulseq/)
->- Languages: `Python`
->- License: AGPLv3
->- Tags: simulation
->- A enables vendor-neutral pulse sequence design in python [1,2]. the pulse sequences can be exported as a .seq file to be run on siemens/ge/bruker hardware by leveraging their respective pulseq interpreters.
-
-- [koma](https://github.com/JuliaHealth/KomaMRI.jl)
->- Languages: `Julia`
->- License: MIT
->- Tags: simulation
->- A pulseq-compatible framework to efficiently simulate magnetic resonance imaging (mri) acquisitions
-
-- [gropt](https://github.com/mloecher/gropt)
->- Languages: `C`, `Python`
->- License: GPLv3
->- Tags: simulation
->- A  toolbox for mri gradient optimization
-
-- [disimpy](https://github.com/kerkelae/disimpy)
->- Languages: `Python`
->- License: MIT
->- Tags: simulation
->- A python package for generating simulated diffusion-weighted mr signals that can be useful in the development and validation of data acquisition and analysis methods
-
-- [mri-generalized-bloch](https://github.com/JakobAsslaender/MRIgeneralizedBloch.jl)
->- Languages: `Julia`
->- License: MIT
->- Tags: simulation
->- A julia package that implements the generalized bloch equations for modeling the dynamics of the semi-solid spin pool in magnetic resonance imaging (mri), and its exchange with the free spin pool
-
-- [mri-research-tools](https://github.com/korbinian90/MriResearchTools.jl)
->- Languages: `Julia`
->- License: MIT
->- Tags: processing, analysis, simulation
->- A specialized tools for mri
 
 ### Brain <a name="brain"></a>
 - [ukf-tractography](https://github.com/pnlbwh/ukftractography)
@@ -772,6 +780,12 @@ tags = ["repo-tag-1", "repo-tag-2"]
 >- Tags: data
 >- A read and write access to common neuroimaging file formats, including: analyze (plain, spm99, spm2 and later), gifti, nifti1, nifti2, cifti-2, minc1, minc2, afni brik/head, ecat and philips par/rec. in addition, nibabel also supports freesurfer's mgh, geometry, annotation and morphometry files, and provides some limited support for dicom
 
+- [mrdqed](https://github.com/EGates1/MRDQED)
+>- Languages: `Python`
+>- License: None
+>- Tags: qa, data
+>- A magnetic resonance data quality evaluation dashboard
+
 ### Visualisation <a name="visualisation"></a>
 - [slicer](https://github.com/Slicer/Slicer)
 >- Languages: `Python`, `C++`
@@ -808,6 +822,43 @@ tags = ["repo-tag-1", "repo-tag-2"]
 >- License: Apache
 >- Tags: visualisation
 >- A high performance web tool for advanced visualization (both in 2d and 3d modes) medical volumetric data, provided in popular file formats: dicom, nifti, ktx, hdr
+
+### Qa <a name="qa"></a>
+- [mrqy](https://github.com/ccipd/MRQy)
+>- Languages: `Javascript`, `Python`
+>- License: BSD
+>- Tags: qa, analysis
+>- A generate several tags and noise/information measurements for quality assessment
+
+- [fetal-iqa](https://github.com/daviddmc/fetal-IQA)
+>- Languages: `Python`
+>- License: MIT
+>- Tags: qa, fetal
+>- A  image quality assessment (iqa) method for fetal mri
+
+- [mriqc](https://github.com/nipreps/mriqc)
+>- Languages: `Javascript`, `Python`
+>- License: Apache
+>- Tags: qa, analysis
+>- A extracts no-reference iqms (image quality metrics) from structural (t1w and t2w) and functional mri (magnetic resonance imaging) data
+
+- [mrqa](https://github.com/Open-Minds-Lab/mrQA)
+>- Languages: `Python`
+>- License: Apache
+>- Tags: qa
+>- A mrqa: tools for quality assurance in medical imaging datasets, including protocol compliance
+
+- [hazen](https://github.com/GSTT-CSC/hazen)
+>- Languages: `Python`
+>- License: Apache
+>- Tags: qa
+>- A quality assurance framework for magnetic resonance imaging
+
+- [mrdqed](https://github.com/EGates1/MRDQED)
+>- Languages: `Python`
+>- License: None
+>- Tags: qa, data
+>- A magnetic resonance data quality evaluation dashboard
 
 ### Fetal <a name="fetal"></a>
 - [nesvor](https://github.com/daviddmc/NeSVoR)
@@ -846,25 +897,6 @@ tags = ["repo-tag-1", "repo-tag-2"]
 >- Tags: qa, fetal
 >- A  image quality assessment (iqa) method for fetal mri
 
-### Qa <a name="qa"></a>
-- [mrqy](https://github.com/ccipd/MRQy)
->- Languages: `Javascript`, `Python`
->- License: BSD
->- Tags: qa, analysis
->- A generate several tags and noise/information measurements for quality assessment
-
-- [fetal-iqa](https://github.com/daviddmc/fetal-IQA)
->- Languages: `Python`
->- License: MIT
->- Tags: qa, fetal
->- A  image quality assessment (iqa) method for fetal mri
-
-- [mriqc](https://github.com/nipreps/mriqc)
->- Languages: `Javascript`, `Python`
->- License: Apache
->- Tags: qa, analysis
->- A extracts no-reference iqms (image quality metrics) from structural (t1w and t2w) and functional mri (magnetic resonance imaging) data
-
 ### Renal <a name="renal"></a>
 - [ukat](https://github.com/UKRIN-MAPS/ukat)
 >- Languages: `Python`
@@ -885,6 +917,13 @@ tags = ["repo-tag-1", "repo-tag-2"]
 >- License: GPLv3
 >- Tags: analysis, muscle
 >- A quantitative mri of the muscles
+
+### Safety <a name="safety"></a>
+- [mrisafety](https://github.com/felixhorger/MRISafety.jl)
+>- Languages: `Julia`
+>- License: None
+>- Tags: safety, simulation
+>- A mri safety checks
 
 
 
@@ -1244,6 +1283,24 @@ tags = ["repo-tag-1", "repo-tag-2"]
 >- Tags: ml, segmentation, processing
 >- A code to preprocess, segment, and fuse glioma mri scans based on the brats toolkit manuscript
 
+- [mrqa](https://github.com/Open-Minds-Lab/mrQA)
+>- Languages: `Python`
+>- License: Apache
+>- Tags: qa
+>- A mrqa: tools for quality assurance in medical imaging datasets, including protocol compliance
+
+- [hazen](https://github.com/GSTT-CSC/hazen)
+>- Languages: `Python`
+>- License: Apache
+>- Tags: qa
+>- A quality assurance framework for magnetic resonance imaging
+
+- [mrdqed](https://github.com/EGates1/MRDQED)
+>- Languages: `Python`
+>- License: None
+>- Tags: qa, data
+>- A magnetic resonance data quality evaluation dashboard
+
 ### C++ <a name="c++"></a>
 - [slicer](https://github.com/Slicer/Slicer)
 >- Languages: `Python`, `C++`
@@ -1383,6 +1440,12 @@ tags = ["repo-tag-1", "repo-tag-2"]
 >- License: MIT
 >- Tags: analysis
 >- A open source toolkit for dynamic contrast enhanced mri analysis
+
+- [mrisafety](https://github.com/felixhorger/MRISafety.jl)
+>- Languages: `Julia`
+>- License: None
+>- Tags: safety, simulation
+>- A mri safety checks
 
 ### C <a name="c"></a>
 - [ukf-tractography](https://github.com/pnlbwh/ukftractography)
