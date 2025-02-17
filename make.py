@@ -1,69 +1,130 @@
 #! /usr/bin/env python
 
-"""Generates the README from repos.toml"""
+"""Generates the README from urls.toml."""
 
-# Python imports
+from __future__ import annotations
+
+import datetime
+import json
+import logging
 import tomllib
+import urllib.request
 from collections import Counter
+from pathlib import Path
+
+logger = logging.getLogger(__name__)
 
 
-def get_repos_from_conf(path: str) -> list[dict]:
-    """Returns a dictionary of the repos
+def load_repo_info_from_file(
+    name: str, path: str = "repos.json",
+) -> dict | None:
+    """Load repository information from the path."""
+    path = Path(path)
+    try:
+        with path.open("rb") as fp:
+            return json.load(fp)[name]
+    except (FileNotFoundError, KeyError):
+        return None
+
+
+def update_repo_info_to_file(
+    name: str, info: dict, path: str = "repos.json",
+) -> bool:
+    """Update the repos.json file."""
+    try:
+        with Path(path).open("rb") as fp:
+            repos_data = json.load(fp)
+    except (FileNotFoundError, json.JSONDecodeError):
+        repos_data = {}
+    repos_data[name] = info
+    with Path(path).open("w") as fp:
+        json.dump(repos_data, fp)
+    return True
+
+
+def maybe_get_repo_info_from_url(
+        url: str,
+        api: str = "https://api.github.com/repos",
+        repo_path: str = "repos.json",
+) -> dict:
+    """Get the repository information from the URL.
 
     Args:
-        path (str) : Path to the toml file.
+        url : URL to the project.
+        api : Root url for the API request.
+            Defaults to "https://api.github.com/repos"
+        repo_path : Fall back json file for when url fails.
+
+    Returns:
+        info : Repository information.
+
+    """
+    owner, repo = url.split("/")[-2:]
+    api_url = f"{api}/{owner}/{repo}"
+    request = urllib.request.Request(api_url)
+    try:
+        response = urllib.request.urlopen(request)
+    except urllib.error.HTTPError as err:
+        logger.warning(err)
+        return load_repo_info_from_file(repo, repo_path)
+    response_data = response.read().decode("utf-8")
+    data = json.loads(response_data)
+    info = {
+        "name": data["name"],
+        "description": data["description"],
+        "link": url,
+        "languages": (
+            [data["language"]]
+            if isinstance(data["language"], str)
+            else data["language"]
+        ),
+        "license": data["license"]["name"],
+        "tags": data["topics"],
+        "forks": data["forks"],
+        "open_issues": data["open_issues"],
+        "watchers": data["watchers"],
+        "updated_at": datetime.datetime.fromisoformat(
+            data["updated_at"],
+        ).strftime("%Y-%m-%d"),
+    }
+    update_repo_info_to_file(repo, info, repo_path)
+    return info
+
+
+def get_repos_from_conf(
+        url_path: str, repo_path: str = "repos.json",
+) -> list[dict]:
+    """Return a dictionary of the repos.
+
+    Args:
+        url_path : Path to the toml file containing the urls.
+        repo_path : Path to the json file containing the repo information.
+            Defaults to "repos.json" - used if url fetching fails.
 
     Returns:
         repos (list[dict]) : List containing the repo information.
+
     """
+    with Path(url_path).open("rb") as fp:
+        urls = tomllib.load(fp)["urls"]
+    repos = [maybe_get_repo_info_from_url(url) for url in urls]
+    return [r for r in repos if r]
 
-    with open(path, "rb") as fp:
-        repos = tomllib.load(fp)
-    return repos
-
-
-def check_repos_format(repos: list[dict]) -> bool:
-    """Checks the repos are correctly formatted
-
-    Args:
-        repos (list[dict]) : List containg the repo information.
-
-    Returns:
-        return_val (bool) : True if sucessful, False otherwise.
-    """
-
-    fields = {
-        "languages": list,
-        "link": str,
-        "license": str,
-        "description": str,
-        "tags": list
-    }
-
-    for k in repos:
-        repo = repos[k]
-        if len(repo.keys()) != len(fields.keys()):
-            return False
-        for key in repo.keys():
-            if key not in list(fields.keys()):
-                return False
-            if not isinstance(repo[key], fields[key]):
-                return False
-    return True
 
 def count_entries_in_field(repos: list[dict], field: str) -> dict:
-    """Gets the number of occurances of each entry within a field
-    
+    """Get the number of occurances of each entry within a field.
+
     Args:
-        repos (list[dict]) : List containg the repo information.
+        repos : List containg the repo information.
+        field : Field to count.
 
     Returns:
         count_dict (dict) : Dictionary of the field occurances.
-    """
 
+    """
     cnt = Counter()
-    for k in repos:
-        vals = repos[k][field]
+    for repo in repos:
+        vals = repo[field]
         if isinstance(vals, (list, tuple)):
             for v in vals:
                 cnt[v.lower()] += 1
@@ -72,7 +133,7 @@ def count_entries_in_field(repos: list[dict], field: str) -> dict:
     return dict(cnt.most_common())
 
 def make(repos: list[dict], out: str = "README.md") -> bool:
-    """Renders the markdown document from the repos toml file
+    """Render the markdown document from the repos toml file.
 
     Args:
         repos (list[dict]) : List containg the repo information.
@@ -81,37 +142,30 @@ def make(repos: list[dict], out: str = "README.md") -> bool:
 
     Returns:
         return_val (bool) : True if sucessful, False otherwise.
-    """
 
+    """
     intro = (
         "# MRI Tools\n"
         "![license](https://img.shields.io/github/license/abdrysdale/mri-tools.svg)\n\n"
         "A collection of free and open-source software software tools for use in MRI.\n"
         "Free is meant as in free beer (gratis) and freedom (libre).\n\n"
-        "To add a project edit the repos.toml file and submit a pull request.\n"
-        "Repositories are stored in the toml file in the format:\n\n"
-        "```toml\n"
-        "[repo-name]\nlanguages = [\"repo-lang-1\", \"repo-lang-2\"]\nlink = \"repo-link\"\n"
-        "license = \"repo-license\"\ndescription = \"A short description about the repo\"\n"
-        "tags = [\"repo-tag-1\", \"repo-tag-2\"]\n"
-        "```\n\n"
+        "To add a project simply add the project url to the `urls.toml` file."
     )
 
     languages = count_entries_in_field(repos, "languages")
     tags = count_entries_in_field(repos, "tags")
     licenses = count_entries_in_field(repos, "license")
 
-    def _rend_table(col, cnt_dict):
+    def _rend_table(col: str, cnt_dict: dict) -> str:
         _out = (
             f"| {col} | Count |\n"
             "|---|---|\n"
         )
 
-        for k in cnt_dict.keys():
+        for k in cnt_dict:
             _out = _out + f"| {k} | {cnt_dict[k]} |\n"
 
         return _out
-            
 
     mdrend = (
         "## Stats\n"
@@ -121,48 +175,46 @@ def make(repos: list[dict], out: str = "README.md") -> bool:
         f"- Licenses:\n\n{_rend_table("Licence", licenses)}\n"
     )
 
-    def _get_repo_str(repo, k):
-        _out = (
-            f"- [{k}]({repo["link"]})\n"                        # Repo name + link
+    def _get_repo_str(repo: dict, k: str) -> str:
+        return (
+            f"- [{k}]({repo["link"]})\n"                        # Repo name/link
+            f">- {repo["description"]}\n\n"                     # Description
+            f">- License: {repo["license"]}\n"                  # License
             ">- Languages: "                                    # Languages
             f"{", ".join(["`"+l.title()+"`" for l in repo["languages"]])}\n"
-            f">- License: {repo["license"]}\n"                  # License
             f">- Tags: {", ".join(repo["tags"])}\n"             # Tags
-            f">- A {repo["description"].lower()}\n\n"           # Description
+            f">- Forks:\t{repo["forks"]} \n"                    # Forks
+            f">- Issues:\t{repo["open_issues"]}\n"              # Open issues
+            f">- Watchers:\t{repo["watchers"]}\n"               # Watchers
+            f">- Last updated: {repo["updated_at"]}\n\n"        # Last Updated
         )
-        return _out
 
-    def _toc_item(key):
+
+    def _toc_item(key: str) -> str:
         return f"[{key}](#{key})"
 
     stats = {"tags": tags, "languages": languages}
     toc = f"## Table of Contents\n- {_toc_item("stats")}\n"
     for section in ("tags", "languages"):
-
         toc = toc + f"- {_toc_item(section)}\n"
         mdrend = mdrend + f"\n\n## {section.title()}\n"
-
-        for f in stats[section].keys():
-
+        for f in stats[section]:
             toc = toc + f"\t- {_toc_item(f)}\n"
-            mdrend = mdrend + f"### {f.title()} <a name=\"{f}\"></a>\n"
-
-            for k in repos:
-
-                repo = repos[k]
-
+            mdrend = mdrend + f'### {f.title()} <a name="{f}"></a>\n'
+            for repo in repos:
                 if f in repo[section]:
-                    mdrend = mdrend + _get_repo_str(repo, k)
+                    mdrend = mdrend + _get_repo_str(repo, repo["name"])
 
     mdrend = intro + toc + "\n" + mdrend
 
-    with open(out, "w") as fp:
+    with Path(out).open("w") as fp:
         fp.write(mdrend)
 
     return True
-                
+
+
 if __name__ == "__main__":
 
-    repos = get_repos_from_conf("repos.toml")
-    print(f"Repos okay?:\t{check_repos_format(repos)}")
+    repos = get_repos_from_conf("urls.toml")
+    print(f"Repos found:\t{len(repos)}")  # noqa: T201
     make(repos)
