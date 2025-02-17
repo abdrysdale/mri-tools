@@ -179,14 +179,14 @@ def make(
 
     mdrend = (
         "## Summary\n"
-        "| Repository | Tags | Stars | Forks | Last Updated |\n"
+        "| Repository | Description | Stars | Forks | Last Updated |\n"
         "|---|---|---|---|---|\n"
     )
     repos = sorted(repos, key=lambda x: x[sort_by], reverse=True)
     for r in repos:
         mdrend = mdrend +(
             f'| {r["name"]} '
-            f'| {", ".join(r["tags"])} '
+            f'| {r["description"]} '
             f'| {r["watchers"]} '
             f'| {r["forks"]} '
             f'| {r["updated_at"]} |\n'

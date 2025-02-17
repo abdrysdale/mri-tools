@@ -62,88 +62,88 @@ To add a project, add the project url to the `urls.toml` file.
 	- [javascript](#javascript)
 
 ## Summary
-| Repository | Tags | Stars | Forks | Last Updated |
+| Repository | Description | Stars | Forks | Last Updated |
 |---|---|---|---|---|
-| MONAI | deep-learning, healthcare-imaging, medical-image-computing, medical-image-processing, monai, python3, pytorch | 6119 | 1136 | 2025-02-17 |
-| torchio | augmentation, data-augmentation, deep-learning, machine-learning, medical-image-analysis, medical-image-computing, medical-image-processing, medical-images, medical-imaging-datasets, medical-imaging-with-deep-learning, python, pytorch | 2127 | 241 | 2025-02-17 |
-| Slicer | 3d-printing, 3d-slicer, c-plus-plus, computed-tomography, image-guided-therapy, image-processing, itk, kitware, medical-image-computing, medical-imaging, national-institutes-of-health, neuroimaging, nih, python, qt, registration, segmentation, tcia-dac, tractography, vtk | 1828 | 578 | 2025-02-17 |
-| MedicalZooPytorch | 3d-convolutional-network, brats2018, brats2019, deep-learning, densenet, iseg, iseg-challenge, medical-image-processing, medical-image-segmentation, medical-imaging, mrbrains18, pytorch, resnet, segmentation, segmentation-models, unet, unet-image-segmentation | 1777 | 298 | 2025-02-16 |
-| fastMRI | convolutional-neural-networks, deep-learning, fastmri, fastmri-challenge, fastmri-dataset, medical-imaging, mri, mri-reconstruction, pytorch | 1384 | 384 | 2025-02-14 |
-| medicaldetectiontoolkit | 3d-mask-rcnn, 3d-models, 3d-object-detection, deep-learning, deep-neural-networks, detection, mask-rcnn, medical-image-analysis, medical-image-computing, medical-image-processing, medical-imaging, object-detection, pytorch-cnn, pytorch-deeplearning, pytorch-implementation, retina-net, retina-unet, segmentation, semantic-segmentation, u-net | 1317 | 296 | 2025-02-15 |
-| nilearn | brain-connectivity, brain-imaging, brain-mri, decoding, fmri, machine-learning, mvpa, neuroimaging, python | 1239 | 618 | 2025-02-17 |
-| deepmedic | convolutional-neural-networks, deep-learning, machine-learning, medical-imaging, neural-networks | 1039 | 347 | 2025-02-08 |
-| SimpleITK | c-plus-plus, csharp, image-analysis, image-processing, itk, java, lua, python, r, registration, ruby, segmentation, simpleitk, swig, tcl | 931 | 207 | 2025-02-14 |
-| medicaltorch | computer-vision, deep-learning, machine-learning, medical-imaging, python, pytorch | 861 | 128 | 2025-02-07 |
-| nipype | big-data, brain-imaging, brainweb, data-science, dataflow, dataflow-programming, neuroimaging, python, workflow-engine | 761 | 532 | 2025-02-14 |
-| nibabel | afni-brik-head, brain-imaging, cifti-2, data-formats, dicom, ecat, gifti, minc, neuroimaging, nifti, python, streamlines, tck, trk | 677 | 260 | 2025-02-16 |
-| freesurfer | freesurfer, lcn, mri, neuroimaging | 641 | 254 | 2025-02-17 |
-| SynthSeg |  | 409 | 104 | 2025-02-17 |
-| brainchop | 3d-segmentation, deep-learning, frontend-app, javascript, medical-imaging, mri, mri-segmentation, neuroimaging, pyodide, tensorflowjs, three-js | 405 | 46 | 2025-02-16 |
-| nipy |  | 385 | 145 | 2025-01-22 |
-| mriviewer |  | 340 | 107 | 2025-02-06 |
-| intensity-normalization | fcm, harmonization, intensity-normalization, mri, neuroimaging, normalization, ravel, standardization, whitestripe, zscore | 323 | 58 | 2025-02-17 |
-| PyMVPA |  | 316 | 136 | 2025-02-12 |
-| mriqc | machine-learning, mri, neuroimaging, quality-control, quality-reporter | 310 | 132 | 2025-02-10 |
-| bart | bart-toolbox, compressed-sensing, computational-imaging, deep-learning, iterative-methods, mri | 309 | 164 | 2025-02-17 |
-| mrtrix3 |  | 299 | 184 | 2025-02-14 |
-| direct | deep-learning, fastmri-challenge, inverse-problems, medical-imaging, mri-reconstruction, pytorch | 254 | 43 | 2025-02-14 |
-| nitime |  | 244 | 83 | 2025-01-31 |
-| gadgetron |  | 241 | 162 | 2025-02-12 |
-| TractSeg |  | 233 | 74 | 2024-12-11 |
-| spinalcordtoolbox | mri, neuroimage, python, spinalcord | 216 | 103 | 2025-02-17 |
-| brainGraph | brain-connectivity, brain-imaging, complex-networks, connectome, connectomics, fmri, graph-theory, mri, network-analysis, neuroimaging, neuroscience, r, statistics, tractography | 188 | 53 | 2025-02-10 |
-| clinicadl | alzheimer-disease, brain-imaging, convolutional-neural-network, deep-learning, medical-imaging, neuroimaging, python, pytorch | 166 | 57 | 2025-02-14 |
-| NiftyMIC |  | 145 | 35 | 2025-01-17 |
-| qsiprep | bids, denoising-images, diffusion-mri, distortion-correction, motion-correction, pipelines | 145 | 58 | 2025-02-03 |
-| mritopng | dicom, dicom-converter, dicom-images, medical, medical-images, png, python | 143 | 50 | 2025-01-20 |
-| smriprep | image-processing, image-registration, image-segmentation, mri, structural-mri, surface-reconstruction | 136 | 40 | 2025-01-21 |
-| pypulseq | mri, mri-sequences, pulse-sequences, pulseq, python | 135 | 69 | 2025-02-13 |
-| KomaMRI.jl | cardiac, diffusion, diffusion-mri, gpu-acceleration, mri, simulation | 127 | 21 | 2025-02-16 |
-| openMorph |  | 127 | 38 | 2025-01-30 |
-| gif_your_nifti |  | 121 | 35 | 2025-01-26 |
-| pydeface |  | 114 | 42 | 2025-02-13 |
-| ismrmrd |  | 113 | 88 | 2025-02-07 |
-| quickNAT_pytorch | ai, bayesian, biomarkers, brain-imaging, computer-vision, convolutional-neural-networks, deep-learning, machine-learning, medical-imaging, mri-images, neuroanatomy, pytorch, quality-control, segmentation, uncertainty | 103 | 37 | 2024-12-27 |
-| MRQy | imaging, machine-learning, medical-image-processing, medical-imaging, medical-physics, mri, python, quality-assurance, quality-control, quality-metrics | 96 | 30 | 2025-02-02 |
-| MRIReco.jl |  | 88 | 22 | 2025-02-17 |
-| BraTS-Toolkit | glioblastoma, glioma, medical-imaging, mri, segmentation | 81 | 12 | 2025-01-25 |
-| NeSVoR | 3d-reconstruction, 3d-visualization, deep-learning, image-reconstruction, image-registration, implicit-neural-representation, medical-imaging, mri, nerf, neural-network, neural-rendering, pytorch, segmentation, super-resolution, transformers | 76 | 17 | 2025-02-08 |
-| NIfTI.jl | fmri, julia, mri, mri-images, nifti | 74 | 34 | 2024-12-27 |
-| virtual-scanner | mri | 64 | 18 | 2025-02-07 |
-| SIRF | image-reconstruction, medical-imaging, pet-mr | 64 | 29 | 2025-02-17 |
-| QUIT |  | 61 | 21 | 2024-11-22 |
-| SVRTK | fetal, mri, reconstruction, retrospecitve, slice-to-volume | 50 | 8 | 2025-02-17 |
-| tensorflow-mri | machine-learning, magnetic-resonance-imaging, ml, mri, python, tensorflow | 40 | 3 | 2025-02-10 |
-| DCEMRI.jl | analysis, cancer-imaging-research, dce-mri, julia, mat-files, medical-image-processing, medical-imaging | 38 | 16 | 2025-01-13 |
-| DECAES.jl |  | 33 | 5 | 2024-11-20 |
-| popeye |  | 33 | 14 | 2024-10-09 |
-| mialsuperresolutiontoolkit | bids, bids-apps, fetal, itk, mri, nipype, super-resolution, workflow | 28 | 12 | 2024-12-06 |
-| ukftractography | 3d-slicer-extension | 26 | 27 | 2025-02-13 |
-| DL-DiReCT | cortical-thickness, deep-learning, morphometry, mri | 26 | 5 | 2025-01-15 |
-| MriResearchTools.jl | mri, mri-images | 26 | 8 | 2025-02-09 |
-| disimpy | cuda, diffusion-mri, gpu-computing, monte-carlo-simulation | 25 | 9 | 2024-12-19 |
-| nlsam | denoising-algorithm, diffusion-mri, machine-learning, python | 24 | 11 | 2024-10-26 |
-| hazen | image-processing, mri, mri-phantoms, python, qa, quality-assurance | 24 | 12 | 2025-02-13 |
-| MRIgeneralizedBloch.jl |  | 19 | 3 | 2025-02-14 |
-| gropt |  | 18 | 13 | 2024-12-17 |
-| flow4D |  | 18 | 5 | 2024-09-10 |
-| pyCoilGen | magnetic-field-solver, magnetic-resonance-imaging, medical-physics, mri, nmr, physics | 16 | 7 | 2025-02-13 |
-| sHDR | fusion, hdr, image, medical-image-processing, medical-imaging, mri | 16 | 0 | 2024-11-29 |
-| dafne |  | 16 | 6 | 2025-01-25 |
-| eptlib |  | 14 | 2 | 2025-02-15 |
-| scanhub |  | 13 | 2 | 2025-02-05 |
-| PowerGrid |  | 13 | 13 | 2024-12-13 |
-| ukat |  | 12 | 4 | 2024-10-30 |
-| MyoQMRI |  | 12 | 3 | 2024-09-28 |
-| mrQA | brain, ismrm, mr-image, mri, mri-brain, mri-images, neuroimaging, neuroscience, niqc, qa, quality-assurance, quality-control | 11 | 6 | 2025-01-09 |
-| AFFIRM | deep-learning, fetus, motion | 9 | 1 | 2023-11-17 |
-| vespa | fitting, mrs, python, rf-pulse, simulation, spectroscopy, wxpython | 7 | 6 | 2024-12-18 |
-| CoSimPy |  | 6 | 3 | 2024-08-15 |
-| fetal-IQA | convolutional-neural-networks, deep-learning, fetal-mri, medical-imaging, pytorch, quality-control, semi-supervised-learning, tensorflow | 6 | 0 | 2024-10-12 |
-| dwybss |  | 2 | 1 | 2019-08-01 |
-| madym_python |  | 0 | 0 | 2021-11-22 |
-| MRDQED |  | 0 | 1 | 2021-01-31 |
-| MRISafety.jl |  | 0 | 0 | 2025-01-04 |
+| MONAI | AI Toolkit for Healthcare Imaging | 6119 | 1136 | 2025-02-17 |
+| torchio | Medical imaging processing for deep learning. | 2127 | 241 | 2025-02-17 |
+| Slicer | Multi-platform, free open source software for visualization and image computing. | 1828 | 578 | 2025-02-17 |
+| MedicalZooPytorch | A pytorch-based deep learning framework for multi-modal 2D/3D medical image segmentation | 1777 | 298 | 2025-02-16 |
+| fastMRI | A large-scale dataset of both raw MRI measurements and clinical MRI images. | 1384 | 384 | 2025-02-14 |
+| medicaldetectiontoolkit | The Medical Detection Toolkit contains 2D + 3D implementations of prevalent object detectors such as Mask R-CNN, Retina Net, Retina U-Net, as well as a training and inference framework focused on dealing with medical images.   | 1317 | 296 | 2025-02-15 |
+| nilearn | Machine learning for NeuroImaging in Python | 1239 | 618 | 2025-02-17 |
+| deepmedic | Efficient Multi-Scale 3D Convolutional Neural Network for Segmentation of 3D Medical Scans | 1039 | 347 | 2025-02-08 |
+| SimpleITK | SimpleITK: a layer built on top of the Insight Toolkit (ITK), intended to simplify and facilitate ITK's use in rapid prototyping, education and interpreted languages. | 931 | 207 | 2025-02-14 |
+| medicaltorch | A medical imaging framework for Pytorch | 861 | 128 | 2025-02-07 |
+| nipype | Workflows and interfaces for neuroimaging packages | 761 | 532 | 2025-02-14 |
+| nibabel | Python package to access a cacophony of neuro-imaging file formats | 677 | 260 | 2025-02-16 |
+| freesurfer | Neuroimaging analysis and visualization suite | 641 | 254 | 2025-02-17 |
+| SynthSeg | Contrast-agnostic segmentation of MRI scans | 409 | 104 | 2025-02-17 |
+| brainchop | Brainchop: In-browser 3D MRI rendering and segmentation | 405 | 46 | 2025-02-16 |
+| nipy | Neuroimaging in Python FMRI analysis package | 385 | 145 | 2025-01-22 |
+| mriviewer | MRI Viewer is a high performance web tool for advanced 2-D and 3-D medical visualizations. | 340 | 107 | 2025-02-06 |
+| intensity-normalization | normalize the intensities of various MR image modalities | 323 | 58 | 2025-02-17 |
+| PyMVPA | MultiVariate Pattern Analysis in Python | 316 | 136 | 2025-02-12 |
+| mriqc | Automated Quality Control and visual reports for Quality Assessment of structural (T1w, T2w) and functional MRI of the brain | 310 | 132 | 2025-02-10 |
+| bart | BART: Toolbox for Computational Magnetic Resonance Imaging | 309 | 164 | 2025-02-17 |
+| mrtrix3 | MRtrix3 provides a set of tools to perform various advanced diffusion MRI analyses, including constrained spherical deconvolution (CSD), probabilistic tractography, track-density imaging, and apparent fibre density | 299 | 184 | 2025-02-14 |
+| direct | Deep learning framework for MRI reconstruction | 254 | 43 | 2025-02-14 |
+| nitime | Timeseries analysis for neuroscience data | 244 | 83 | 2025-01-31 |
+| gadgetron | Gadgetron - Medical Image Reconstruction Framework | 241 | 162 | 2025-02-12 |
+| TractSeg | Automatic White Matter Bundle Segmentation | 233 | 74 | 2024-12-11 |
+| spinalcordtoolbox | Comprehensive and open-source library of analysis tools for MRI of the spinal cord. | 216 | 103 | 2025-02-17 |
+| brainGraph | Graph theory analysis of brain MRI data | 188 | 53 | 2025-02-10 |
+| clinicadl | Framework for the reproducible processing of neuroimaging data with deep learning methods | 166 | 57 | 2025-02-14 |
+| NiftyMIC | NiftyMIC is a research-focused toolkit for motion correction and volumetric image reconstruction of 2D ultra-fast MRI. | 145 | 35 | 2025-01-17 |
+| qsiprep | Preprocessing of diffusion MRI | 145 | 58 | 2025-02-03 |
+| mritopng | A simple python module to make it easy to batch convert DICOM files to PNG images. | 143 | 50 | 2025-01-20 |
+| smriprep | Structural MRI PREProcessing (sMRIPrep) workflows for NIPreps (NeuroImaging PREProcessing tools) | 136 | 40 | 2025-01-21 |
+| pypulseq | Pulseq in Python | 135 | 69 | 2025-02-13 |
+| KomaMRI.jl | Koma is a Pulseq-compatible framework to efficiently simulate Magnetic Resonance Imaging (MRI) acquisitions. The main focus of this package is to simulate general scenarios that could arise in pulse sequence development. | 127 | 21 | 2025-02-16 |
+| openMorph | Curated list of open-access databases with human structural MRI data | 127 | 38 | 2025-01-30 |
+| gif_your_nifti | How to create fancy GIFs from an MRI brain image | 121 | 35 | 2025-01-26 |
+| pydeface | defacing utility for MRI images | 114 | 42 | 2025-02-13 |
+| ismrmrd | ISMRM Raw Data Format | 113 | 88 | 2025-02-07 |
+| quickNAT_pytorch | PyTorch Implementation of QuickNAT and Bayesian QuickNAT, a fast brain MRI segmentation framework with segmentation Quality control using structure-wise uncertainty | 103 | 37 | 2024-12-27 |
+| MRQy | RadQy is a quality assurance and checking tool for quantitative assessment of magnetic resonance imaging (MRI) and computed tomography (CT) data. | 96 | 30 | 2025-02-02 |
+| MRIReco.jl | Julia Package for MRI Reconstruction | 88 | 22 | 2025-02-17 |
+| BraTS-Toolkit | Code to preprocess, segment, and fuse glioma MRI scans based on the BraTS Toolkit manuscript. | 81 | 12 | 2025-01-25 |
+| NeSVoR | NeSVoR is a package for GPU-accelerated slice-to-volume reconstruction. | 76 | 17 | 2025-02-08 |
+| NIfTI.jl | Julia module for reading/writing NIfTI MRI files | 74 | 34 | 2024-12-27 |
+| virtual-scanner | An end-to-end hybrid MR simulator/console | 64 | 18 | 2025-02-07 |
+| SIRF | Main repository for the CCP SynerBI software | 64 | 29 | 2025-02-17 |
+| QUIT | A set of tools for processing Quantitative MR Images | 61 | 21 | 2024-11-22 |
+| SVRTK | MIRTK based SVR reconstruction | 50 | 8 | 2025-02-17 |
+| tensorflow-mri | A Library of TensorFlow Operators for Computational MRI | 40 | 3 | 2025-02-10 |
+| DCEMRI.jl | DCE MRI analysis in Julia | 38 | 16 | 2025-01-13 |
+| DECAES.jl | DEcomposition and Component Analysis of Exponential Signals (DECAES) - a Julia implementation of the UBC Myelin Water Imaging (MWI) toolbox for computing voxelwise T2-distributions of multi spin-echo MRI images. | 33 | 5 | 2024-11-20 |
+| popeye | A population receptive field estimation tool | 33 | 14 | 2024-10-09 |
+| mialsuperresolutiontoolkit | The Medical Image Analysis Laboratory Super-Resolution ToolKit (MIALSRTK) consists of a set of C++ and Python processing and workflow tools necessary to perform motion-robust super-resolution fetal MRI reconstruction in the BIDS Apps framework. | 28 | 12 | 2024-12-06 |
+| ukftractography | None | 26 | 27 | 2025-02-13 |
+| DL-DiReCT | DL+DiReCT - Direct Cortical Thickness Estimation using Deep Learning-based Anatomy Segmentation and Cortex Parcellation | 26 | 5 | 2025-01-15 |
+| MriResearchTools.jl | Specialized tools for MRI | 26 | 8 | 2025-02-09 |
+| disimpy | Massively parallel Monte Carlo diffusion MR simulator written in Python. | 25 | 9 | 2024-12-19 |
+| nlsam | The reference implementation for the Non Local Spatial and Angular Matching (NLSAM) denoising algorithm for diffusion MRI | 24 | 11 | 2024-10-26 |
+| hazen | Quality assurance framework for Magnetic Resonance Imaging | 24 | 12 | 2025-02-13 |
+| MRIgeneralizedBloch.jl | None | 19 | 3 | 2025-02-14 |
+| gropt | A toolbox for MRI gradient design | 18 | 13 | 2024-12-17 |
+| flow4D | Python code for processing 4D flow dicoms and write velocity profiles for CFD simulations. | 18 | 5 | 2024-09-10 |
+| pyCoilGen | Magnetic Field Coil Generator for Python, ported from CoilGen | 16 | 7 | 2025-02-13 |
+| sHDR | HDR-MRI Algorithms from "Local contrast-enhanced MR images via high dynamic range processing" published in MRM | 16 | 0 | 2024-11-29 |
+| dafne | Dafne (Deep Anatomical Federated Network) is a collaborative platform to annotate MRI images and train machine learning models without your data ever leaving your machine. | 16 | 6 | 2025-01-25 |
+| eptlib | EPTlib - An open-source, extensible C++ library of electric properties tomography methods | 14 | 2 | 2025-02-15 |
+| scanhub | ScanHub combines multimodal data acquisition and complex data processing in one cloud platform. | 13 | 2 | 2025-02-05 |
+| PowerGrid | GPU accelerated non-Cartesian magnetic resonance imaging reconstruction toolkit | 13 | 13 | 2024-12-13 |
+| ukat | UKRIN Kidney Analysis Toolbox | 12 | 4 | 2024-10-30 |
+| MyoQMRI | Quantitative methods for muscle MRI | 12 | 3 | 2024-09-28 |
+| mrQA | mrQA: tools for quality assurance in medical imaging datasets, including protocol compliance | 11 | 6 | 2025-01-09 |
+| AFFIRM | A deep recursive fetal motion estimation and correction framework based on slice and volume affinity fusion | 9 | 1 | 2023-11-17 |
+| vespa | Python tools for Magnetic Resonance Spectroscopy - Pulses, Simulation and Analysis | 7 | 6 | 2024-12-18 |
+| CoSimPy | Python electromagnetic cosimulation library | 6 | 3 | 2024-08-15 |
+| fetal-IQA | Image quality assessment for fetal MRI | 6 | 0 | 2024-10-12 |
+| dwybss | Blind Source Separation of diffusion MRI for free-water elimination and tissue characterization. | 2 | 1 | 2019-08-01 |
+| madym_python | Mirror of python wrappers to Madym hosted on Manchester QBI GitLab project | 0 | 0 | 2021-11-22 |
+| MRDQED | A Magnetic Resonance Data Quality Evaluation Dashboard | 0 | 1 | 2021-01-31 |
+| MRISafety.jl | MRI safety checks | 0 | 0 | 2025-01-04 |
 ## Stats
 - Total repos: 80
 - Languages:
