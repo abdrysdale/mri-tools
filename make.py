@@ -132,13 +132,17 @@ def count_entries_in_field(repos: list[dict], field: str) -> dict:
             cnt[vals.lower()] += 1
     return dict(cnt.most_common())
 
-def make(repos: list[dict], out: str = "README.md") -> bool:
+def make(
+    repos: list[dict], out: str = "README.md", toc_thresh: int = 2,
+) -> bool:
     """Render the markdown document from the repos toml file.
 
     Args:
-        repos (list[dict]) : List containg the repo information.
-        out (str, optional) : Output file to render to.
+        repos : List containg the repo information.
+        out : Output file to render to.
                 Defaults to "README.md"
+        toc_thresh : Number of entries needed to be considered in the
+            table of contents. Defaults to 2.
 
     Returns:
         return_val (bool) : True if sucessful, False otherwise.
@@ -198,8 +202,9 @@ def make(repos: list[dict], out: str = "README.md") -> bool:
     for section in ("tags", "languages"):
         toc = toc + f"- {_toc_item(section)}\n"
         mdrend = mdrend + f"\n\n## {section.title()}\n"
-        for f in stats[section]:
-            toc = toc + f"\t- {_toc_item(f)}\n"
+        for f, cnt in stats[section].items():
+            if cnt >= toc_thresh:
+                toc = toc + f"\t- {_toc_item(f)}\n"
             mdrend = mdrend + f'### {f.title()} <a name="{f}"></a>\n'
             for repo in repos:
                 if f in repo[section]:

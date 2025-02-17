@@ -35,111 +35,12 @@ To add a project simply add the project url to the `urls.toml` file.## Table of 
 	- [nifti](#nifti)
 	- [brain-imaging](#brain-imaging)
 	- [dicom](#dicom)
-	- [magnetic-field-solver](#magnetic-field-solver)
-	- [nmr](#nmr)
-	- [physics](#physics)
-	- [3d-printing](#3d-printing)
-	- [3d-slicer](#3d-slicer)
-	- [computed-tomography](#computed-tomography)
-	- [image-guided-therapy](#image-guided-therapy)
-	- [kitware](#kitware)
-	- [medical-image-computing](#medical-image-computing)
-	- [national-institutes-of-health](#national-institutes-of-health)
-	- [nih](#nih)
-	- [qt](#qt)
-	- [tcia-dac](#tcia-dac)
-	- [tractography](#tractography)
-	- [vtk](#vtk)
-	- [pet-mr](#pet-mr)
-	- [fusion](#fusion)
-	- [hdr](#hdr)
-	- [image](#image)
-	- [3d-slicer-extension](#3d-slicer-extension)
-	- [cortical-thickness](#cortical-thickness)
-	- [morphometry](#morphometry)
-	- [neuroimage](#neuroimage)
-	- [spinalcord](#spinalcord)
-	- [freesurfer](#freesurfer)
-	- [lcn](#lcn)
-	- [csharp](#csharp)
-	- [image-analysis](#image-analysis)
-	- [java](#java)
-	- [lua](#lua)
-	- [r](#r)
-	- [ruby](#ruby)
-	- [simpleitk](#simpleitk)
-	- [swig](#swig)
-	- [tcl](#tcl)
-	- [ml](#ml)
-	- [cardiac](#cardiac)
-	- [diffusion](#diffusion)
-	- [gpu-acceleration](#gpu-acceleration)
-	- [simulation](#simulation)
-	- [cuda](#cuda)
-	- [gpu-computing](#gpu-computing)
-	- [monte-carlo-simulation](#monte-carlo-simulation)
-	- [imaging](#imaging)
-	- [quality-assurance](#quality-assurance)
-	- [quality-metrics](#quality-metrics)
-	- [denoising-algorithm](#denoising-algorithm)
-	- [image-segmentation](#image-segmentation)
-	- [structural-mri](#structural-mri)
-	- [surface-reconstruction](#surface-reconstruction)
-	- [fastmri](#fastmri)
-	- [fastmri-challenge](#fastmri-challenge)
-	- [fastmri-dataset](#fastmri-dataset)
-	- [mri-reconstruction](#mri-reconstruction)
-	- [3d-reconstruction](#3d-reconstruction)
-	- [3d-visualization](#3d-visualization)
-	- [implicit-neural-representation](#implicit-neural-representation)
-	- [nerf](#nerf)
-	- [neural-network](#neural-network)
-	- [neural-rendering](#neural-rendering)
-	- [transformers](#transformers)
-	- [fetus](#fetus)
-	- [motion](#motion)
-	- [reconstruction](#reconstruction)
-	- [retrospecitve](#retrospecitve)
-	- [slice-to-volume](#slice-to-volume)
-	- [bids](#bids)
-	- [bids-apps](#bids-apps)
-	- [nipype](#nipype)
-	- [workflow](#workflow)
-	- [fetal-mri](#fetal-mri)
-	- [semi-supervised-learning](#semi-supervised-learning)
-	- [fmri](#fmri)
-	- [analysis](#analysis)
-	- [cancer-imaging-research](#cancer-imaging-research)
-	- [dce-mri](#dce-mri)
-	- [mat-files](#mat-files)
-	- [ai](#ai)
-	- [bayesian](#bayesian)
-	- [biomarkers](#biomarkers)
-	- [computer-vision](#computer-vision)
-	- [neuroanatomy](#neuroanatomy)
-	- [uncertainty](#uncertainty)
-	- [dicom-converter](#dicom-converter)
-	- [dicom-images](#dicom-images)
-	- [medical](#medical)
-	- [medical-images](#medical-images)
-	- [png](#png)
-	- [afni-brik-head](#afni-brik-head)
-	- [cifti-2](#cifti-2)
-	- [data-formats](#data-formats)
-	- [ecat](#ecat)
-	- [gifti](#gifti)
-	- [minc](#minc)
-	- [streamlines](#streamlines)
-	- [tck](#tck)
-	- [trk](#trk)
 - [languages](#languages)
 	- [python](#python)
 	- [c++](#c++)
 	- [julia](#julia)
 	- [jupyter notebook](#jupyter notebook)
 	- [c](#c)
-	- [typescript](#typescript)
-	- [swig](#swig)
 
 ## Stats
 - Total repos: 46
@@ -356,7 +257,7 @@ To add a project simply add the project url to the `urls.toml` file.## Table of 
 >- Forks:	103 
 >- Issues:	363
 >- Watchers:	216
->- Last updated: 2025-02-14
+>- Last updated: 2025-02-17
 
 - [freesurfer](https://github.com/freesurfer/freesurfer)
 >- Neuroimaging analysis and visualization suite
@@ -600,7 +501,7 @@ To add a project simply add the project url to the `urls.toml` file.## Table of 
 >- Forks:	103 
 >- Issues:	363
 >- Watchers:	216
->- Last updated: 2025-02-14
+>- Last updated: 2025-02-17
 
 - [SimpleITK](https://github.com/SimpleITK/SimpleITK)
 >- SimpleITK: a layer built on top of the Insight Toolkit (ITK), intended to simplify and facilitate ITK's use in rapid prototyping, education and interpreted languages.
@@ -1715,7 +1616,7 @@ To add a project simply add the project url to the `urls.toml` file.## Table of 
 >- Forks:	103 
 >- Issues:	363
 >- Watchers:	216
->- Last updated: 2025-02-14
+>- Last updated: 2025-02-17
 
 ### Spinalcord <a name="spinalcord"></a>
 - [spinalcordtoolbox](https://github.com/spinalcordtoolbox/spinalcordtoolbox)
@@ -1727,7 +1628,7 @@ To add a project simply add the project url to the `urls.toml` file.## Table of 
 >- Forks:	103 
 >- Issues:	363
 >- Watchers:	216
->- Last updated: 2025-02-14
+>- Last updated: 2025-02-17
 
 ### Freesurfer <a name="freesurfer"></a>
 - [freesurfer](https://github.com/freesurfer/freesurfer)
