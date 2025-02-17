@@ -4,6 +4,7 @@
 
 from __future__ import annotations
 
+import argparse
 import datetime
 import json
 import logging
@@ -46,6 +47,7 @@ def maybe_get_repo_info_from_url(
         url: str,
         api: str = "https://api.github.com/repos",
         repo_path: str = "repos.json",
+        token: str | None = None,
 ) -> dict:
     """Get the repository information from the URL.
 
@@ -54,6 +56,7 @@ def maybe_get_repo_info_from_url(
         api : Root url for the API request.
             Defaults to "https://api.github.com/repos"
         repo_path : Fall back json file for when url fails.
+        token : GitHub Auth Token.
 
     Returns:
         info : Repository information.
@@ -61,11 +64,15 @@ def maybe_get_repo_info_from_url(
     """
     owner, repo = url.split("/")[-2:]
     api_url = f"{api}/{owner}/{repo}"
+
     request = urllib.request.Request(api_url)
+    if token is not None:
+        request.add_header("Authorization", f"token {token}")
+
     try:
         response = urllib.request.urlopen(request)
     except urllib.error.HTTPError as err:
-        logger.warning(err)
+        logger.warning("%s: %s", url, err)
         return load_repo_info_from_file(repo, repo_path)
     response_data = response.read().decode("utf-8")
     data = json.loads(response_data)
@@ -78,7 +85,11 @@ def maybe_get_repo_info_from_url(
             if isinstance(data["language"], str)
             else data["language"]
         ),
-        "license": data["license"]["name"],
+        "license": (
+            "None"
+            if data["license"] is None
+            else data["license"]["name"]
+        ),
         "tags": data["topics"],
         "forks": data["forks"],
         "open_issues": data["open_issues"],
@@ -92,7 +103,7 @@ def maybe_get_repo_info_from_url(
 
 
 def get_repos_from_conf(
-        url_path: str, repo_path: str = "repos.json",
+        url_path: str, repo_path: str = "repos.json", token: str | None = None,
 ) -> list[dict]:
     """Return a dictionary of the repos.
 
@@ -100,6 +111,7 @@ def get_repos_from_conf(
         url_path : Path to the toml file containing the urls.
         repo_path : Path to the json file containing the repo information.
             Defaults to "repos.json" - used if url fetching fails.
+        token : GitHub Auth token.
 
     Returns:
         repos (list[dict]) : List containing the repo information.
@@ -107,7 +119,7 @@ def get_repos_from_conf(
     """
     with Path(url_path).open("rb") as fp:
         urls = tomllib.load(fp)["urls"]
-    repos = [maybe_get_repo_info_from_url(url) for url in urls]
+    repos = [maybe_get_repo_info_from_url(url, token=token) for url in urls]
     return [r for r in repos if r]
 
 
@@ -153,7 +165,7 @@ def make(
         "![license](https://img.shields.io/github/license/abdrysdale/mri-tools.svg)\n\n"
         "A collection of free and open-source software software tools for use in MRI.\n"
         "Free is meant as in free beer (gratis) and freedom (libre).\n\n"
-        "To add a project simply add the project url to the `urls.toml` file."
+        "To add a project, add the project url to the `urls.toml` file.\n\n"
     )
 
     languages = count_entries_in_field(repos, "languages")
@@ -220,6 +232,22 @@ def make(
 
 if __name__ == "__main__":
 
-    repos = get_repos_from_conf("urls.toml")
-    print(f"Repos found:\t{len(repos)}")  # noqa: T201
+    parser = argparse.ArgumentParser(
+        description="Make the README",
+    )
+
+    parser.add_argument(
+        "-t",
+        "--token",
+        default=None,
+        type=str,
+        help="GitHub Auth Token.",
+    )
+    args = parser.parse_args()
+
+    with Path("urls.toml").open("rb") as fp:
+        ttl_urls = len(tomllib.load(fp)["urls"])
+    repos = get_repos_from_conf("urls.toml", token=args.token)
+    print(f"Repos found:\t{len(repos)}/{ttl_urls}")  # noqa: T201
+
     make(repos)
