@@ -232,7 +232,11 @@ def make(
         return f"[{key}](#{key})"
 
     stats = {"tags": tags, "languages": languages}
-    toc = f"## Table of Contents\n- {_toc_item("stats")}\n"
+    toc = (
+        f"## Table of Contents\n"
+        f'- {_toc_item("summary")}\n'
+        f'- {_toc_item("stats")}\n'
+    )
     for section in ("tags", "languages"):
         toc = toc + f"- {_toc_item(section)}\n"
         mdrend = mdrend + f"\n\n## {section.title()}\n"

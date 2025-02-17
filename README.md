@@ -7,6 +7,7 @@ Free is meant as in free beer (gratis) and freedom (libre).
 To add a project, add the project url to the `urls.toml` file.
 
 ## Table of Contents
+- [summary](#summary)
 - [stats](#stats)
 - [tags](#tags)
 	- [mri](#mri)
