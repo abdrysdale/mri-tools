@@ -145,7 +145,10 @@ def count_entries_in_field(repos: list[dict], field: str) -> dict:
     return dict(cnt.most_common())
 
 def make(
-    repos: list[dict], out: str = "README.md", toc_thresh: int = 2,
+    repos: list[dict],
+    out: str = "README.md",
+    toc_thresh: int = 2,
+    sort_by: str = "watchers",
 ) -> bool:
     """Render the markdown document from the repos toml file.
 
@@ -155,6 +158,8 @@ def make(
                 Defaults to "README.md"
         toc_thresh : Number of entries needed to be considered in the
             table of contents. Defaults to 2.
+        sort_by : Key to sort the summary table by.
+            Defaults to "watchers".
 
     Returns:
         return_val (bool) : True if sucessful, False otherwise.
@@ -172,23 +177,39 @@ def make(
     tags = count_entries_in_field(repos, "tags")
     licenses = count_entries_in_field(repos, "license")
 
+    mdrend = (
+        "## Summary\n"
+        "| Repository | Tags | Stars | Forks | Last Updated |\n"
+        "|---|---|---|---|---|\n"
+    )
+    repos = sorted(repos, key=lambda x: x[sort_by], reverse=True)
+    for r in repos:
+        mdrend = mdrend +(
+            f'| {r["name"]} '
+            f'| {", ".join(r["tags"])} '
+            f'| {r["watchers"]} '
+            f'| {r["forks"]} '
+            f'| {r["updated_at"]} |\n'
+        )
+
     def _rend_table(col: str, cnt_dict: dict) -> str:
         _out = (
             f"| {col} | Count |\n"
             "|---|---|\n"
         )
 
-        for k in cnt_dict:
-            _out = _out + f"| {k} | {cnt_dict[k]} |\n"
+        for k, cnt in cnt_dict.items():
+            if cnt >= toc_thresh:
+                _out = _out + f"| {k} | {cnt} |\n"
 
         return _out
 
-    mdrend = (
+    mdrend = mdrend + (
         "## Stats\n"
         f"- Total repos: {len(repos)}\n"
         f"- Languages:\n\n{_rend_table("Language", languages)}\n"
         f"- Tags:\n\n{_rend_table("Tag", tags)}\n"
-        f"- Licenses:\n\n{_rend_table("Licence", licenses)}\n"
+        f"- Licenses:\n\n{_rend_table("Licence", licenses)}\n\n"
     )
 
     def _get_repo_str(repo: dict, k: str) -> str:
@@ -207,6 +228,7 @@ def make(
 
 
     def _toc_item(key: str) -> str:
+        key = key.replace(" ", "-")
         return f"[{key}](#{key})"
 
     stats = {"tags": tags, "languages": languages}
@@ -217,7 +239,10 @@ def make(
         for f, cnt in stats[section].items():
             if cnt >= toc_thresh:
                 toc = toc + f"\t- {_toc_item(f)}\n"
-            mdrend = mdrend + f'### {f.title()} <a name="{f}"></a>\n'
+            mdrend = (
+                mdrend +
+                f'### {f.title()} <a name="{f.replace(" ", "-")}"></a>\n'
+            )
             for repo in repos:
                 if f in repo[section]:
                     mdrend = mdrend + _get_repo_str(repo, repo["name"])
