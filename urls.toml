@@ -78,5 +78,6 @@ urls = [
     'https://github.com/Open-Minds-Lab/mrQA',
     'https://github.com/GSTT-CSC/hazen',
     'https://github.com/EGates1/MRDQED',
-    'https://github.com/felixhorger/MRISafety.jl'
+    'https://github.com/felixhorger/MRISafety.jl',
+    'https://github.com/nipreps/niworkflows'
 ]
