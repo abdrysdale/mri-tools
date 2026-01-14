@@ -118,7 +118,7 @@ def get_repos_from_conf(
 
     """
     with Path(url_path).open("rb") as fp:
-        urls = tomllib.load(fp)["urls"]
+        urls = set(tomllib.load(fp)["urls"])
     repos = [maybe_get_repo_info_from_url(url, token=token) for url in urls]
     return [r for r in repos if r]
 
